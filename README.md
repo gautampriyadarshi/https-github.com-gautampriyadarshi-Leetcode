@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0392-is-subsequence](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0392-is-subsequence) |
+| [1486-find-the-distance-value-between-two-arrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 # String
 |  |
 | ------- |
@@ -19,7 +20,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1044-find-common-characters](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1044-find-common-characters) |
+| [1486-find-the-distance-value-between-two-arrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 # Hash Table
 |  |
 | ------- |
 | [1044-find-common-characters](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1044-find-common-characters) |
+# Binary Search
+|  |
+| ------- |
+| [1486-find-the-distance-value-between-two-arrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
+# Sorting
+|  |
+| ------- |
+| [1486-find-the-distance-value-between-two-arrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
