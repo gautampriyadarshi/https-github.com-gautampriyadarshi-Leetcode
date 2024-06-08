@@ -19,12 +19,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Array
 |  |
 | ------- |
+| [0523-continuous-subarray-sum](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1044-find-common-characters](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1044-find-common-characters) |
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 # Hash Table
 |  |
 | ------- |
+| [0523-continuous-subarray-sum](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [1044-find-common-characters](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1044-find-common-characters) |
 # Binary Search
@@ -38,4 +40,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 # Prefix Sum
 |  |
 | ------- |
+| [0523-continuous-subarray-sum](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0560-subarray-sum-equals-k) |
+# Math
+|  |
+| ------- |
+| [0523-continuous-subarray-sum](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0523-continuous-subarray-sum) |
