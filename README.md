@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0482-license-key-formatting](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0482-license-key-formatting) |
 | [0556-next-greater-element-iii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0556-next-greater-element-iii) |
 | [1044-find-common-characters](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1044-find-common-characters) |
+| [3426-minimum-number-of-chairs-in-a-waiting-room](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3426-minimum-number-of-chairs-in-a-waiting-room) |
 # Dynamic Programming
 |  |
 | ------- |
@@ -89,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3422-find-the-n-th-value-after-k-seconds](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3422-find-the-n-th-value-after-k-seconds) |
+| [3426-minimum-number-of-chairs-in-a-waiting-room](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3426-minimum-number-of-chairs-in-a-waiting-room) |
 | [3450-find-the-child-who-has-the-ball-after-k-seconds](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3450-find-the-child-who-has-the-ball-after-k-seconds) |
 # Combinatorics
 |  |
