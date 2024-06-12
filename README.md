@@ -64,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0523-continuous-subarray-sum](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0556-next-greater-element-iii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0556-next-greater-element-iii) |
+| [3450-find-the-child-who-has-the-ball-after-k-seconds](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3450-find-the-child-who-has-the-ball-after-k-seconds) |
 # Counting Sort
 |  |
 | ------- |
@@ -81,3 +82,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2549-next-greater-element-iv](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2549-next-greater-element-iv) |
+# Simulation
+|  |
+| ------- |
+| [3450-find-the-child-who-has-the-ball-after-k-seconds](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3450-find-the-child-who-has-the-ball-after-k-seconds) |
