@@ -38,6 +38,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1486-find-the-distance-value-between-two-arrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1486-find-the-distance-value-between-two-arrays) |
 | [2148-minimum-number-of-moves-to-seat-everyone](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2148-minimum-number-of-moves-to-seat-everyone) |
 | [2549-next-greater-element-iv](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2549-next-greater-element-iv) |
+| [3415-check-if-grid-satisfies-conditions](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3415-check-if-grid-satisfies-conditions) |
 | [3422-find-the-n-th-value-after-k-seconds](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3422-find-the-n-th-value-after-k-seconds) |
 | [3427-special-array-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3427-special-array-ii) |
 | [3428-find-the-xor-of-numbers-which-appear-twice](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3428-find-the-xor-of-numbers-which-appear-twice) |
@@ -128,3 +129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3428-find-the-xor-of-numbers-which-appear-twice](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3428-find-the-xor-of-numbers-which-appear-twice) |
+# Matrix
+|  |
+| ------- |
+| [3415-check-if-grid-satisfies-conditions](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3415-check-if-grid-satisfies-conditions) |
