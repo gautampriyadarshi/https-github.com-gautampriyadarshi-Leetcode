@@ -201,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2196-reverse-nodes-in-even-length-groups](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2196-reverse-nodes-in-even-length-groups) |
+| [2299-merge-nodes-in-between-zeros](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -229,4 +230,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3396-valid-word](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3396-valid-word) |
+## Simulation
+|  |
+| ------- |
+| [2299-merge-nodes-in-between-zeros](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
 <!---LeetCode Topics End-->
