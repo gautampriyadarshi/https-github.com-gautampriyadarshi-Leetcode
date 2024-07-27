@@ -197,6 +197,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1047-maximize-sum-of-array-after-k-negations](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1047-maximize-sum-of-array-after-k-negations) |
 | [1293-three-consecutive-odds](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1293-three-consecutive-odds) |
 | [1346-maximize-the-topmost-element-after-k-moves](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1346-maximize-the-topmost-element-after-k-moves) |
+| [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1711-find-valid-matrix-given-row-and-column-sums](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1711-find-valid-matrix-given-row-and-column-sums) |
@@ -261,6 +262,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0778-reorganize-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0778-reorganize-string) |
 | [0948-sort-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0948-sort-an-array) |
 | [1047-maximize-sum-of-array-after-k-negations](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1047-maximize-sum-of-array-after-k-negations) |
+| [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [1741-sort-array-by-increasing-frequency](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1741-sort-array-by-increasing-frequency) |
 | [2502-sort-the-people](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2502-sort-the-people) |
 ## String
@@ -327,6 +329,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0778-reorganize-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0778-reorganize-string) |
+| [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [2312-most-frequent-number-following-key-in-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2312-most-frequent-number-following-key-in-an-array) |
 | [3324-split-the-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3324-split-the-array) |
 ## Tree
@@ -366,4 +369,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0948-sort-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0948-sort-an-array) |
+## Bit Manipulation
+|  |
+| ------- |
+| [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 <!---LeetCode Topics End-->
