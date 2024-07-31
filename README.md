@@ -213,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0321-create-maximum-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0321-create-maximum-number) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -233,6 +234,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0053-maximum-subarray) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 ## Hash Table
 |  |
 | ------- |
@@ -275,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1430-find-the-k-beauty-of-a-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1430-find-the-k-beauty-of-a-number) |
 | [1472-increasing-decreasing-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1472-increasing-decreasing-string) |
+| [1756-minimum-deletions-to-make-string-balanced](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [2502-sort-the-people](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2502-sort-the-people) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
 | [3396-valid-word](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3396-valid-word) |
