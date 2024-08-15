@@ -473,4 +473,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
+## Database
+|  |
+| ------- |
+| [0176-second-highest-salary](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0176-second-highest-salary) |
 <!---LeetCode Topics End-->
