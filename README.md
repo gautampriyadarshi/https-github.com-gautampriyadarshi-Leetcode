@@ -496,5 +496,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0182-duplicate-emails](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0182-duplicate-emails) |
 | [0184-department-highest-salary](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0184-department-highest-salary) |
 | [0196-delete-duplicate-emails](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0196-delete-duplicate-emails) |
+| [0586-customer-placing-the-largest-number-of-orders](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0586-customer-placing-the-largest-number-of-orders) |
 | [1179-game-play-analysis-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1179-game-play-analysis-i) |
 <!---LeetCode Topics End-->
