@@ -511,6 +511,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1136-actors-and-directors-who-cooperated-at-least-three-times](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1136-actors-and-directors-who-cooperated-at-least-three-times) |
 | [1174-sales-analysis-iii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1174-sales-analysis-iii) |
 | [1179-game-play-analysis-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1179-game-play-analysis-i) |
+| [1245-user-activity-for-the-past-30-days-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1245-user-activity-for-the-past-30-days-i) |
 ## Game Theory
 |  |
 | ------- |
