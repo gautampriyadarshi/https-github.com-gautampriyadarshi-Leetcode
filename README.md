@@ -525,6 +525,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1664-find-users-with-valid-e-mails](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1664-find-users-with-valid-e-mails) |
 | [1670-patients-with-a-condition](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1670-patients-with-a-condition) |
 | [1734-bank-account-summary-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1734-bank-account-summary-ii) |
+| [1773-percentage-of-users-attended-a-contest](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1773-percentage-of-users-attended-a-contest) |
 ## Game Theory
 |  |
 | ------- |
