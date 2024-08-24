@@ -530,6 +530,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1773-percentage-of-users-attended-a-contest](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1773-percentage-of-users-attended-a-contest) |
 | [1801-average-time-of-process-per-machine](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1801-average-time-of-process-per-machine) |
 | [1811-fix-names-in-a-table](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1811-fix-names-in-a-table) |
+| [1837-daily-leads-and-partners](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1837-daily-leads-and-partners) |
 ## Game Theory
 |  |
 | ------- |
