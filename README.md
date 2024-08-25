@@ -543,6 +543,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2110-employees-with-missing-information](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2110-employees-with-missing-information) |
 | [2127-employees-whose-manager-left-the-company](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2127-employees-whose-manager-left-the-company) |
 | [2495-number-of-unique-subjects-taught-by-each-teacher](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2495-number-of-unique-subjects-taught-by-each-teacher) |
+| [3530-odd-and-even-transactions](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3530-odd-and-even-transactions) |
 ## Game Theory
 |  |
 | ------- |
