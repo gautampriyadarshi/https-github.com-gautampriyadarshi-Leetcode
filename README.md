@@ -533,6 +533,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1245-user-activity-for-the-past-30-days-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1245-user-activity-for-the-past-30-days-i) |
 | [1268-market-analysis-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1268-market-analysis-i) |
 | [1278-product-price-at-a-given-date](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1278-product-price-at-a-given-date) |
+| [1292-immediate-food-delivery-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1292-immediate-food-delivery-ii) |
 | [1301-reformat-department-table](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1301-reformat-department-table) |
 | [1317-monthly-transactions-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1317-monthly-transactions-i) |
 | [1327-last-person-to-fit-in-the-bus](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1327-last-person-to-fit-in-the-bus) |
