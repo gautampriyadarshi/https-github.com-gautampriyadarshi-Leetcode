@@ -560,6 +560,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0182-duplicate-emails](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0182-duplicate-emails) |
 | [0184-department-highest-salary](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0184-department-highest-salary) |
 | [0196-delete-duplicate-emails](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0196-delete-duplicate-emails) |
+| [0197-rising-temperature](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0197-rising-temperature) |
 | [0584-find-customer-referee](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0584-find-customer-referee) |
 | [0585-investments-in-2016](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0585-investments-in-2016) |
 | [0586-customer-placing-the-largest-number-of-orders](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0586-customer-placing-the-largest-number-of-orders) |
