@@ -228,6 +228,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1435-xor-queries-of-a-subarray](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
@@ -365,6 +366,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1468-check-if-n-and-its-double-exist](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1472-increasing-decreasing-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1472-increasing-decreasing-string) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
+| [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1694-make-sum-divisible-by-p](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1694-make-sum-divisible-by-p) |
@@ -444,6 +446,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1730-special-array-with-x-elements-greater-than-or-equal-x](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1730-special-array-with-x-elements-greater-than-or-equal-x) |
@@ -627,6 +630,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0920-uncommon-words-from-two-sentences](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [1472-increasing-decreasing-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1472-increasing-decreasing-string) |
+| [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2163-kth-distinct-string-in-an-array) |
