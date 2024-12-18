@@ -13,7 +13,6 @@ public:
                     vec.push_back(prices[i]-prices[j]);
                     break;
                 }
-                    
             }
 
             if(vec.size() == size)
