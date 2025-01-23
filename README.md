@@ -230,6 +230,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1325-path-with-maximum-probability](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1325-path-with-maximum-probability) |
 | [1346-maximize-the-topmost-element-after-k-moves](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1346-maximize-the-topmost-element-after-k-moves) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
+| [1396-count-servers-that-communicate](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1407-group-the-people-given-the-group-size-they-belong-to](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1407-group-the-people-given-the-group-size-they-belong-to) |
 | [1435-xor-queries-of-a-subarray](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1435-xor-queries-of-a-subarray) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
@@ -626,6 +627,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0921-spiral-matrix-iii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0921-spiral-matrix-iii) |
 | [0999-regions-cut-by-slashes](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0999-regions-cut-by-slashes) |
 | [1253-sort-the-matrix-diagonally](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1253-sort-the-matrix-diagonally) |
+| [1396-count-servers-that-communicate](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
@@ -689,6 +691,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0778-reorganize-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0778-reorganize-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0920-uncommon-words-from-two-sentences) |
+| [1396-count-servers-that-communicate](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1458-sort-integers-by-the-number-of-1-bits](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1458-sort-integers-by-the-number-of-1-bits) |
 | [1472-increasing-decreasing-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1472-increasing-decreasing-string) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
@@ -813,6 +816,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0988-flip-equivalent-binary-trees](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0988-flip-equivalent-binary-trees) |
 | [0999-regions-cut-by-slashes](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0999-regions-cut-by-slashes) |
+| [1396-count-servers-that-communicate](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1427-all-elements-in-two-binary-search-trees](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1427-all-elements-in-two-binary-search-trees) |
 | [1484-linked-list-in-binary-tree](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
@@ -825,6 +829,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0515-find-largest-value-in-each-tree-row](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0662-maximum-width-of-binary-tree](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0999-regions-cut-by-slashes) |
+| [1396-count-servers-that-communicate](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [1484-linked-list-in-binary-tree](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1484-linked-list-in-binary-tree) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1691-minimum-number-of-days-to-disconnect-island](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
@@ -836,6 +841,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0999-regions-cut-by-slashes](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0999-regions-cut-by-slashes) |
+| [1396-count-servers-that-communicate](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1396-count-servers-that-communicate) |
 | [2035-count-sub-islands](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2035-count-sub-islands) |
 ## Strongly Connected Component
 |  |
