@@ -3,26 +3,40 @@ public:
     string clearDigits(string s) 
     {
         string ans = "";
-        for(int i = s.size()-1; i >= 0; i--)
+        stack<char> st;
+        for(int i = 0; i < s.size(); i++)
         {
-            if(s[i] >= '0' && s[i] <= '9')
+            st.push(s[i]);
+        }
+
+        bool pr = false;
+        int count = 0;
+        while(!st.empty())
+        {
+            if(st.top() >= '0' && st.top() <= '9')
             {
-                int j = i;
-                while(j >= 0)
+                st.pop();
+                count++;
+            }  
+            
+            if(count > 0)
+            {
+                while(count > 0)
                 {
-                    if(s[j] >= 'a' && s[j] <= 'z')
+                    if(st.top() >= 'a' && st.top() <= 'z')
                     {
-                        s[j] = '#';
-                        break;
+                        st.pop();
+                        count--;
                     }
                     else
-                        j--;
+                        break;
                 }
             }
             else
             {
-                if(s[i] != '#')
-                    ans += s[i];
+                char tp = st.top();
+                st.pop();
+                ans += tp;
             }
         }
 
