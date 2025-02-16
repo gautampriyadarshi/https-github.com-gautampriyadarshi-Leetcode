@@ -188,6 +188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0037-sudoku-solver](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0040-combination-sum-ii) |
 | [0053-maximum-subarray](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0053-maximum-subarray) |
+| [0075-sort-colors](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0075-sort-colors) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0118-pascals-triangle](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0119-pascals-triangle-ii) |
@@ -444,6 +445,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0075-sort-colors](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0075-sort-colors) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0141-linked-list-cycle](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0141-linked-list-cycle) |
 | [0321-create-maximum-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0321-create-maximum-number) |
@@ -483,6 +485,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0075-sort-colors](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0075-sort-colors) |
 | [0179-largest-number](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0179-largest-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0532-k-diff-pairs-in-an-array) |
