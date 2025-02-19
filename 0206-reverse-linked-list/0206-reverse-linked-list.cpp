@@ -15,7 +15,8 @@ public:
         if(head == NULL || head->next == NULL)
             return head;
         
-        ListNode* prev = NULL, *curr = head, *forw = NULL;
+        ListNode* curr = head;
+        ListNode* prev = NULL, *forw = NULL;
 
         while(curr != NULL)
         {
@@ -24,7 +25,6 @@ public:
             prev = curr;
             curr = forw;
         }
-
         return prev;
     }
 };
