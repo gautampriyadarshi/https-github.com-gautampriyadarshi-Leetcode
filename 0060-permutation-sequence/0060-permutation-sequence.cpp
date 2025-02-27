@@ -1,47 +1,68 @@
+/* My code: Time limit exceeded at 123/200 case
 class Solution {
-    void pNext(string& str)
+    void solve(string nums, vector<string> &ans, int index, int k)
     {
-        int idx1 = 0, idx2 = 0, val = -1, n = str.size();
-        for(int i = n-2; i >= 0; i--)
+        if(index >= nums.size())
         {
-            if(str[i] < str[i+1])
-            {
-                idx1 = i;
-                val = i;
-                break;
-            }
-        }
-
-        if(val == -1)
-        {
-            reverse(str.begin(), str.end());
+            ans.push_back(nums);
             return;
         }
 
-        for(int i = n-1; i >= 0; i--)
+        for(int j = index; j < nums.size(); j++)
         {
-            if(str[i] > str[idx1])
-            {
-                idx2 = i;
-                break;
-            }
+            swap(nums[index], nums[j]);
+            solve(nums, ans, index + 1, k);
+
+            //Backtracking
+            swap(nums[index], nums[j]);
         }
-        swap(str[idx1], str[idx2]);
-        reverse(str.begin() + idx1 + 1, str.end());
     }
 public:
     string getPermutation(int n, int k) 
     {
-        string str = "";
+        int index = 0;
+        string nums = "";
         for(int i = 1; i <= n; i++)
         {
-            str +=  to_string(i);
+            nums += to_string(i);
         }
 
-        for(int i = 0; i < k-1; i++)
+        vector<string> ans;
+        solve(nums, ans, index, k);
+
+        sort(ans.begin(), ans.end());
+        
+        return ans[k-1];
+    }
+};  */
+
+class Solution {
+public:
+    string getPermutation(int n, int k) 
+    {
+        int fact = 1;
+        vector<int> nums;
+        for(int i = 1; i < n; i++)
         {
-            pNext(str);
+            fact = fact*i;
+            nums.push_back(i);
         }
-        return str;
+
+        nums.push_back(n);
+        k = k-1;
+        string ans="";
+
+        while(true)
+        {
+            ans += to_string(nums[k/fact]);
+            nums.erase(nums.begin() + k/fact);
+
+            if(nums.size() == 0)
+                break;
+            
+            k = k % fact;
+            fact = fact / nums.size();
+        }
+        return ans;
     }
 };
