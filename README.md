@@ -314,6 +314,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2502-sort-the-people](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2533-bitwise-xor-of-all-pairings) |
+| [2551-apply-operations-to-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2616-maximal-score-after-applying-k-operations) |
 | [2685-first-completely-painted-row-or-column](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2685-first-completely-painted-row-or-column) |
@@ -529,6 +530,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2232-adding-spaces-to-a-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2232-adding-spaces-to-a-string) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [2551-apply-operations-to-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2699-count-the-number-of-fair-pairs) |
 | [3195-separate-black-and-white-balls](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3195-separate-black-and-white-balls) |
@@ -681,6 +683,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2274-keep-multiplying-found-values-by-two](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2411-spiral-matrix-iv](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2411-spiral-matrix-iv) |
+| [2551-apply-operations-to-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [2645-pass-the-pillow](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2645-pass-the-pillow) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
