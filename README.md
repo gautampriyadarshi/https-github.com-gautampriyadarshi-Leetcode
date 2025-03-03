@@ -298,6 +298,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2195-time-needed-to-buy-tickets](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
 | [2232-adding-spaces-to-a-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2232-adding-spaces-to-a-string) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2306-create-binary-tree-from-descriptions) |
@@ -531,6 +532,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1923-sentence-similarity-iii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1923-sentence-similarity-iii) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2232-adding-spaces-to-a-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2232-adding-spaces-to-a-string) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2551-apply-operations-to-an-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2551-apply-operations-to-an-array) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
@@ -683,6 +685,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2155-find-missing-observations](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2155-find-missing-observations) |
 | [2195-time-needed-to-buy-tickets](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2195-time-needed-to-buy-tickets) |
 | [2232-adding-spaces-to-a-string](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2232-adding-spaces-to-a-string) |
+| [2265-partition-array-according-to-given-pivot](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2411-spiral-matrix-iv](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/2411-spiral-matrix-iv) |
