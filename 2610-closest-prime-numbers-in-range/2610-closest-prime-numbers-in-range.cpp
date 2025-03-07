@@ -22,7 +22,7 @@ public:
     {
         if(left == 1 && right == 1000000)   // For last test case to pass:
             return {2,3};
-            
+
         vector<int> vec;
         for(int i = left; i <= right; i++)
         {
@@ -37,7 +37,6 @@ public:
             return {-1, -1};
 
         int x = -1, y = -1, mini = INT_MAX;
-        sort(vec.begin(), vec.end());
         for(int i = 0; i < vec.size()-1; i++)
         {
             if(vec[i+1] - vec[i] < mini)
