@@ -10,16 +10,12 @@ public:
                 return 0;
         }
 
-        int mini = INT_MAX, maxi = INT_MIN, countW = 0, countB = 0, countT = 0;
-        bool present = false;
+        int mini = INT_MAX, countW = 0, countT = 0;
         for(int i = 0; i < blocks.size(); i++)
         {
             countT++;
             if(blocks[i] == 'W')
                 countW++;
-            
-            if(blocks[i] == 'B')
-                countB++;
             
             if(countT == k)
             {
@@ -27,17 +23,9 @@ public:
                 if(blocks[i-k+1] == 'W')
                     countW--;
                 
-                maxi = max(maxi, countB);
-                if(blocks[i-k+1] == 'B')
-                    countB--;
-                
                 countT--;
             }
         }
-
-        if(maxi == k)
-            return 0;
-
         return mini;
     }
 };
