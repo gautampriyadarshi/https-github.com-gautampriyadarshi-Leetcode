@@ -11,7 +11,7 @@ class Solution {
             if(board[i][col] == value)
                 return false;
             
-            if(board[3*(row/3)+(i/3)][3*(col/3)+(i%3)] == value)
+            if(board[3*(row/3) + (i/3)][3*(col/3) + (i%3)] == value)
                 return false;
         }
         return true;
@@ -36,14 +36,19 @@ class Solution {
                             // recursive call
                             bool nextsolution = solve(board);
 
-                            // here we are returning true because the question clearly states that there will be only one answer.
-                            if(nextsolution == true)  return true;
+                            // here we are returning true because the question 
+                            // clearly states that there will be only one answer.
+                            if(nextsolution == true)  
+                                return true;
                                 
                             // backtrack
-                            else    board[i][j]='.';
+                            else    
+                                board[i][j]='.';
                         }
                     }
-                    // if we were not able to fill the current cell by any of digit 1-9 that means we put wrong value in previous cell, so returning false to go back 
+                    // if we were not able to fill the current cell by any of digit 
+                    // 1-9 that means we put wrong value in previous cell, 
+                    // so returning false to go back 
                     return false;
                 }
             }
