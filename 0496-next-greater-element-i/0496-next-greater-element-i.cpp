@@ -2,28 +2,26 @@ class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) 
     {
-        int k;
+        vector<int> ans;
         for(int i = 0; i < nums1.size(); i++)
         {
+            bool seen = false;
+            int size = ans.size();
             for(int j = 0; j < nums2.size(); j++)
             {
-                if(nums1[i] == nums2[j])
+                if(seen && nums2[j] > nums1[i])
                 {
-                    for(k = j+1; k < nums2.size(); k++)
-                    {
-                        if(nums2[k] > nums1[i])
-                        {
-                            nums1[i] = nums2[k];
-                            break;
-                        }
-                    }
-
-                    if(k == nums2.size())
-                        nums1[i] = -1;
+                    ans.push_back(nums2[j]);
                     break;
                 }
+
+                if(nums1[i] == nums2[j])
+                    seen = true;
             }
+
+            if(size == ans.size())
+                ans.push_back(-1);
         }
-        return nums1;
+        return ans;
     }
 };
