@@ -2,52 +2,36 @@ class Solution {
 public:
     int countDays(int days, vector<vector<int>>& meetings) 
     {
-        // TLE:- 561/578 cases passed:
-        /*unordered_map<int, bool> mp;
-        int count = 0;
+        // My code:
+        // TLE: 562/578 cases passed:
+    /*  int count = 0;
+        unordered_map<int, int> mp;
         for(int i = 0; i < meetings.size(); i++)
         {
-            int x = meetings[i][0], y = meetings[i][1];
-            for(int j = x; j <= y; j++)
+            for(int j = meetings[i][0]; j <= meetings[i][1]; j++)
             {
-                mp[j] = true;
-            }
-        }
-
-        for(int i = 1; i <= days; i++)
-        {
-            if(mp[i] == false)
-                count++;
-        }
-        return count;   */
-
-        sort(meetings.begin(), meetings.end());
-        int n = meetings.size();
-        int ans = 0; 
-        int maxDays = 0;
-
-        for(int i = 0; i < n; i++)
-        { 
-            if(i == 0)
-            {
-                ans += meetings[i][0] - 1;
-                maxDays = meetings[i][1];
-            }
-
-            else {
-                if(meetings[i][0] > maxDays)
+                if(mp[j] == 0)
                 {
-                    ans += meetings[i][0] - maxDays -1 ;  
+                    mp[j]++;
+                    count++;
                 }
-                    maxDays = max(maxDays, meetings[i][1]); 
-            }
-
-            if(i == n-1){ 
-                maxDays = max(maxDays, meetings[i][1]);
-                ans += days - maxDays;
-              
             }
         }
-        return ans;
+        return days - count;    */
+
+        int freeDays = 0, latestEnd = 0;
+        sort(meetings.begin(), meetings.end());
+
+        for (auto& meeting : meetings) 
+        {
+            int start = meeting[0], end = meeting[1];
+            if (start > latestEnd + 1) 
+                freeDays += start - latestEnd - 1;
+            
+            latestEnd = max(latestEnd, end);
+        }
+        freeDays += days - latestEnd;
+
+        return freeDays;
     }
 };
