@@ -20,11 +20,10 @@ public:
         int width = 0;
         queue<pair<TreeNode*, long long>> q;
         q.push({root, 0});
+
         while(!q.empty())
         {
-            int size = q.size();
-            int mini = q.front().second;
-            int first, last;
+            int size = q.size(), mini = q.front().second, first, last;
             for(int i = 0; i < size; i++)
             {
                 int curr = q.front().second - mini;
@@ -32,16 +31,16 @@ public:
                 q.pop();
 
                 if(!i) 
-                    first=curr;
+                    first = curr;
 
                 if(i == size-1) 
-                    last =curr;
+                    last = curr;
 
                 if(node->left) 
-                    q.push({node->left, (long long) curr*2+1});
+                    q.push({node->left, (long long)curr*2 + 1});
 
                 if(node->right) 
-                    q.push({node->right, (long long) curr*2+2});
+                    q.push({node->right, (long long)curr*2 + 2});
             }
             width = max(width, last - first + 1);
         }
