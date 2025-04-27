@@ -139,9 +139,9 @@ public:
         // return mini;
 
         // Tabulation:
-        return Tab(matrix);
+        // return Tab(matrix);
 
         // Space Optimization:
-        // return spaceOptimize(matrix);
+        return spaceOptimize(matrix);
     }
 };
