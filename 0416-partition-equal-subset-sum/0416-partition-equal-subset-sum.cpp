@@ -1,62 +1,99 @@
-#include<bits/stdc++.h>
 class Solution {
-    /*
-    bool solveMem(int index, vector<int> arr, int N, int target, vector<vector<int>> &dp)
-    {
-        if(index >= N || target < 0)
-            return 0;
+    bool Rec(int ind, int target, vector<int> &arr)
+{
+    if (target == 0)
+        return true;
 
-        if(target == 0)
-            return 1;
-        
-        if(dp[index][target] != -1)
-            return dp[index][target];
-        
-        bool include = solveMem(index + 1, arr, N, target - arr[index], dp);
-        bool exclude = solveMem(index + 1, arr, N, target - 0, dp);
-        
-        dp[index][target] = include or exclude;
-        return dp[index][target];
-    }   */
-
-    bool solveTab(int N, vector<int>& arr, int total)
+    if (ind == 0)
     {
-        vector<vector<int>> dp(N+1, vector<int>(total + 1, 0));
-        
-        for(int i = 0; i <= N; i++)
-        {
-            dp[i][0] = 1;
-        }
-        
-        for(int index = N-1; index >= 0; index--)
-        {
-            for(int target = 0; target <= total/2; target++)
-            {
-                bool include = 0;
-                if(target - arr[index] >= 0)
-                {
-                    include = dp[index+1][target - arr[index]];
-                }
-                bool exclude = dp[index + 1][target - 0];
-        
-                dp[index][target] = include or exclude;
-            }
-        }
-        return dp[0][total/2];
+        if (arr[0] == target)
+            return true;
+
+        return false;
     }
+
+    bool notTake = Rec(ind - 1, target, arr);
+    bool take = false;
+
+    if (arr[ind] <= target)
+        take = Rec(ind - 1, target - arr[ind], arr);
+
+    return (take || notTake);
+}
+
+bool Mem(int ind, int target, vector<int> &arr, vector<vector<int>> &dp)
+{
+    if (target == 0)
+        return true;
+
+    if (ind == 0)
+    {
+        if (arr[0] == target)
+            return true;
+
+        return false;
+    }
+
+    if (dp[ind][target] != -1)
+        return dp[ind][target];
+
+    bool notTake = Mem(ind - 1, target, arr, dp);
+    bool take = false;
+
+    if (arr[ind] <= target)
+        take = Mem(ind - 1, target - arr[ind], arr, dp);
+
+    return dp[ind][target] = (take || notTake);
+}
+
+bool Tab(int n, int k, vector<int> &arr)
+{
+    vector<vector<bool>> dp(n, vector<bool>(k + 1, 0));
+    for (int i = 0; i < n; i++)
+    {
+        dp[i][0] = true;
+    }
+
+    dp[0][arr[0]] = true;
+
+    for (int ind = 1; ind < n; ind++)
+    {
+        for (int target = 1; target <= k; target++)
+        {
+            bool notTake = dp[ind - 1][target];
+            bool take = false;
+
+            if (arr[ind] <= target)
+                take = dp[ind - 1][target - arr[ind]];
+
+            dp[ind][target] = take || notTake;
+        }
+    }
+    return dp[n - 1][k];
+}
+
 public:
     bool canPartition(vector<int>& arr) 
     {
-        int N = arr.size(), total = 0;
-        for(int i = 0; i < N; i++)
+        int sum = 0, k = 0, n = arr.size();
+        for(int i = 0; i < n; i++)
         {
-            total += arr[i];
+            sum += arr[i];
         }
-        
-        if(total % 2 != 0)
-            return 0;
-        
-        int target = total/2;
-        return solveTab(N, arr, total); 
+
+        if(sum % 2 != 0)
+            return false;
+
+        k = sum/2;
+
+        // Recursion:
+        // return Rec(n - 1, k, arr);
+
+        // Memoization:
+        vector<vector<int>> dp(n, vector<int>(k + 1, -1));
+        return Mem(n - 1, k, arr, dp);
+
+        // Tabulation: Little bit indexing error here, but process is correct.
+        // return Tab(n, k, arr);
     }
 };
