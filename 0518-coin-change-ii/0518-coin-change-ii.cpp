@@ -43,7 +43,7 @@ class Solution {
                 int notTake = dp[ind - 1][T];
                 int take = 0;
                 if (a[ind] <= T)
-                    take = dp[ind][T - a[ind]];
+                    take = dp[ind][T - a[ind]]; 
 
                 dp[ind][T] = take + notTake;
             }
@@ -68,7 +68,7 @@ class Solution {
                 if (a[ind] <= T)
                     take = curr[T - a[ind]];
 
-                curr[T] = take + notTake;
+                curr[T] = take + notTake; // Giving Run-time error:
             }
             prev = curr;
         }
