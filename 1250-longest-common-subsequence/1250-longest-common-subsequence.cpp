@@ -26,7 +26,7 @@ class Solution {
 
     int Tab(string s, string t)
     {
-        int n = s.size() + 1, m = t.size() + 1;
+        int n = s.size(), m = t.size();
         vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
 
         // Base Case by shifting the index:
@@ -54,6 +54,32 @@ class Solution {
         return dp[n][m];
     }
 
+    int spaceOptimization(string s, string t)
+    {
+        int n = s.size(), m = t.size();
+        vector<int> prev(m + 1, 0), curr(m + 1, 0);
+
+        // Base Case by shifting the index:
+        for (int j = 0; j <= m; j++)
+        {
+            prev[j] = 0;
+        }
+
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= m; j++)
+            {
+                if (s[i - 1] == t[j - 1]) // (__-1) due to shifting of index.
+                    curr[j] = 1 + prev[j - 1];
+
+                else
+                    curr[j] = max(prev[j], curr[j - 1]);
+            }
+            prev = curr;
+        }
+        return prev[m];
+    }
+
 public:
     int longestCommonSubsequence(string s, string t) 
     {
@@ -63,10 +89,13 @@ public:
         // return Rec(n - 1, m - 1, s, t);
 
         // Memoization:
-        vector<vector<int>> dp(n, vector<int>(m, -1));
-        return Mem(n - 1, m - 1, s, t, dp);
+        // vector<vector<int>> dp(n, vector<int>(m, -1));
+        // return Mem(n - 1, m - 1, s, t, dp);
 
         // Tabulation:
         // return Tab(s, t);
+
+        // Space Optimization:
+        return spaceOptimization(s, t);
     }
 };
