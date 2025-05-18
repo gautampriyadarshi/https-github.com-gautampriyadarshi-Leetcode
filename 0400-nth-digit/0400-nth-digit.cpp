@@ -13,7 +13,7 @@ public:
         int q = (n-1) / digit;
         int rem = (n-1) % digit;
 
-        return to_string(base+q)[rem] - '0';
+        return to_string(base + q)[rem] - '0';
         
         /*
         if(n <= 9)
