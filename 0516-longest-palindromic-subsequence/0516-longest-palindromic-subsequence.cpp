@@ -90,11 +90,11 @@ public:
         // return Rec(n - 1, m - 1, s, t);
 
         // Memoization:
-        vector<vector<int>> dp(n, vector<int>(m, -1));
-        return Mem(n - 1, m - 1, s, t, dp);
+        // vector<vector<int>> dp(n, vector<int>(m, -1));
+        // return Mem(n - 1, m - 1, s, t, dp);
 
         // Tabulation:
-        // return Tab(s, t);
+        return Tab(s, t);
 
         // Space Optimization:
         // return spaceOptimization(s, t);
