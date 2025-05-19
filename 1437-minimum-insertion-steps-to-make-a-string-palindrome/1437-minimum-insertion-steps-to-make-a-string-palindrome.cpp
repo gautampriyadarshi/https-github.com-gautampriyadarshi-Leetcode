@@ -96,10 +96,10 @@ public:
         // return Mem(n - 1, m - 1, s, t, dp);
 
         // Tabulation:
-        return Tab(s, t);
+        // return Tab(s, t);
 
         // Space Optimization:
-        // return spaceOptimization(s, t);
+        return spaceOptimization(s, t);
     }
 
     // Given Function:
