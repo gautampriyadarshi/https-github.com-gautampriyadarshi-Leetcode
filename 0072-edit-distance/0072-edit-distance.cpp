@@ -72,6 +72,7 @@ class Solution {
 
         for (int i = 1; i <= n; i++)
         {
+            curr[0] = i;
             for (int j = 1; j <= m; j++)
             {
                 if (s1[i - 1] == s2[j - 1])
@@ -97,9 +98,9 @@ public:
         // return Mem(n - 1, m - 1, str1, str2, dp);
 
         // Tabulation:
-        return Tab(str1, str2);
+        // return Tab(str1, str2);
 
         // Space Optimization:
-        // return spaceOptimization(str1, str2);
+        return spaceOptimization(str1, str2);
     }
 };
