@@ -68,10 +68,10 @@ public:
         // return Rec(0, 1, prices, n);
 
         // Memoization:
-        vector<vector<int>> dp(n, vector<int>(2, -1));
-        return Mem(0, 1, prices, n, dp);
+        // vector<vector<int>> dp(n, vector<int>(2, -1));
+        // return Mem(0, 1, prices, n, dp);
 
         // Tabulation:
-        // return Tab(prices);
+        return Tab(prices);
     }
 };
