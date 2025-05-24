@@ -67,8 +67,8 @@ class Solution {
     int spaceOptimization(int k, vector<int>& prices)
     {
         int n = prices.size();
-        vector<vector<int>> after(2, vector<int>(3, 0));
-        vector<vector<int>> curr(2, vector<int>(3, 0));
+        vector<vector<int>> after(2, vector<int>(k+1, 0));
+        vector<vector<int>> curr(2, vector<int>(k+1, 0));
 
         // Base cases done as all values are 0 initially.
 
@@ -76,7 +76,7 @@ class Solution {
         {
             for(int buy = 0; buy <= 1; buy++)
             {
-                for(int cap = 1; cap <= 2; cap++)
+                for(int cap = 1; cap <= k; cap++)
                 {
                     int profit = 0; 
 
@@ -90,7 +90,7 @@ class Solution {
             }
             after = curr;
         }
-        return after[1][2];
+        return after[1][k];
     }
 public:
     int maxProfit(int k, vector<int>& prices) 
@@ -105,9 +105,9 @@ public:
         // return Mem(0, 1, k, prices, n, dp);
 
         // Tabulation:
-        return Tab(k, prices);
+        // return Tab(k, prices);
 
         // Space Optimization:
-        // return spaceOptimization(k, prices);
+        return spaceOptimization(k, prices);
     }
 };
