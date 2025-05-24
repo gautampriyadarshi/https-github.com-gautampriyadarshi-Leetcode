@@ -59,7 +59,7 @@ class Solution {
         return dp[0][1];
     }
 
-    int spaceOptimization(vector<int>& prices)
+    int spaceOptimization(vector<int>& prices, int fee)
     {
         int n = prices.size();
         vector<int>ahead(2, 0), curr(2, 0);
@@ -74,7 +74,7 @@ class Solution {
                 if(buy) 
                     profit = max(-prices[ind] + ahead[0], 0 + ahead[1]); 
                 else 
-                    profit = max(prices[ind] + ahead[1], 0 + ahead[0]); 
+                    profit = max(prices[ind] - fee + ahead[1], 0 + ahead[0]); 
 
                 curr[buy] = profit;
             }
@@ -95,9 +95,9 @@ public:
         // return Mem(0, 1, prices, n, fee, dp);
 
         // Tabulation:
-        return Tab(prices, fee);
+        // return Tab(prices, fee);
 
         // Space Optimization:
-        // return spaceOptimization(prices, fee);
+        return spaceOptimization(prices, fee);
     }
 };
