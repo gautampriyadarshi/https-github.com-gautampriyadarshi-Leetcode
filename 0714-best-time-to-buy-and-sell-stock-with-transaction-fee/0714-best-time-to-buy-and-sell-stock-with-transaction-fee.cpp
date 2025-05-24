@@ -36,7 +36,7 @@ class Solution {
         return dp[ind][buy] = profit;
     }
 
-    int Tab(vector<int>& prices)
+    int Tab(vector<int>& prices, int fee)
     {
         int n = prices.size();
         vector<vector<int>> dp(n+1, vector<int>(2, 0));
@@ -51,7 +51,7 @@ class Solution {
                 if(buy) 
                     profit = max(-prices[ind] + dp[ind+1][0], 0 + dp[ind+1][1]); 
                 else 
-                    profit = max(prices[ind] + dp[ind+1][1], 0 + dp[ind+1][0]); 
+                    profit = max(prices[ind] - fee + dp[ind+1][1], 0 + dp[ind+1][0]); 
 
                 dp[ind][buy] = profit;
             }
@@ -91,11 +91,11 @@ public:
         // return Rec(0, 1, prices, n, fee);
 
         // Memoization:
-        vector<vector<int>> dp(n, vector<int>(2, -1));
-        return Mem(0, 1, prices, n, fee, dp);
+        // vector<vector<int>> dp(n, vector<int>(2, -1));
+        // return Mem(0, 1, prices, n, fee, dp);
 
         // Tabulation:
-        // return Tab(prices, fee);
+        return Tab(prices, fee);
 
         // Space Optimization:
         // return spaceOptimization(prices, fee);
