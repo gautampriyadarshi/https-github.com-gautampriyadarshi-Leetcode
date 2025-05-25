@@ -48,6 +48,27 @@ class Solution {
         }
         return dp[0][-1 + 1];
     }
+
+    int spaceOptimization(vector<int> &nums)
+    {
+        int n = nums.size();
+        vector<int> next(n + 1, 0), curr(n + 1, 0);
+
+        for (int ind = n - 1; ind >= 0; ind--)
+        {
+            for (int prev_ind = ind - 1; prev_ind >= -1; prev_ind--)
+            {
+                int len = 0 + next[prev_ind + 1];
+
+                if (prev_ind == -1 || nums[ind] > nums[prev_ind])
+                    len = max(len, 1 + next[ind + 1]);
+
+                curr[prev_ind + 1] = len;
+            }
+            next = curr;
+        }
+        return next[-1 + 1];
+    }
 public:
     int lengthOfLIS(vector<int>& nums) 
     {
@@ -61,6 +82,9 @@ public:
         // return Mem(0, -1, nums, n, dp);
 
         // Tabulation:
-        return Tab(nums);
+        // return Tab(nums);
+
+        // Space Optimization:
+        return spaceOptimization(nums);
     }
 };
