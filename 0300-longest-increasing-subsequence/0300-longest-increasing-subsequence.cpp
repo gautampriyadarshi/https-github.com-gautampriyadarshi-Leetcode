@@ -72,7 +72,9 @@ class Solution {
 
     int optimizedTab(vector<int>& nums)
     {
-        int n = nums.size(), maxi = 1;;
+        // For returning the length:
+        /*
+        int n = nums.size(), maxi = 1;
         vector<int> dp(n, 1);
 
         for(int i = 0; i < n; i++)
@@ -84,6 +86,46 @@ class Solution {
             }
             maxi = max(maxi, dp[i]);
         }
+        return maxi;    */
+
+        // For printing:
+        int n = nums.size(), maxi = 1, lastIndex = 0;
+        vector<int> dp(n, 1), hash(n);
+
+        for (int i = 0; i < n; i++)
+        {
+            hash[i] = i;
+            for (int prev = 0; prev < i; prev++)
+            {
+                if (nums[prev] < nums[i] && 1 + dp[prev] > dp[i])
+                {
+                    dp[i] = 1 + dp[prev];
+                    hash[i] = prev;
+                }
+            }
+
+            if (dp[i] > maxi)
+            {
+                maxi = dp[i];
+                lastIndex = i;
+            }
+        }
+
+        vector<int> temp;
+        temp.push_back(nums[lastIndex]);
+
+        while (hash[lastIndex] != lastIndex)
+        {
+            lastIndex = hash[lastIndex];
+            temp.push_back(nums[lastIndex]);
+        }
+        reverse(temp.begin(), temp.end());
+
+        for(auto x: temp)
+        {
+            cout << x << " ";
+        }
+
         return maxi;
     }
 public:
@@ -104,7 +146,7 @@ public:
         // Space Optimization:
         // return spaceOptimization(nums);
 
-        // Optimized:
+        // Optimized: For printing purpose
         return optimizedTab(nums);
     }
 };
