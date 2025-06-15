@@ -3,25 +3,20 @@ public:
     bool repeatedSubstringPattern(string s) 
     {
         int n = s.length();
-        unordered_set<string> mp;
-
-        for(int i = 0; i<n/2; i++)
+        for (int i = 1; i <= n / 2; ++i) 
         {
-            int len_sub = i+1;
-            mp.insert(s.substr(0,len_sub));
-
-            for(int j=i+1; j<n; )
+            if (n % i == 0) 
             {
-                if(mp.find(s.substr(j,len_sub)) != mp.end() && j+len_sub == n)
-                    return true;
-                
-                else if(mp.find(s.substr(j,len_sub)) == mp.end())
+                string substring = s.substr(0, i);
+                string repeated = "";
+
+                for (int j = 0; j < n / i; ++j) 
                 {
-                    mp.clear();
-                    break;
+                    repeated += substring;
                 }
-                else
-                    j = j+len_sub;
+
+                if (repeated == s) 
+                    return true;
             }
         }
         return false;
