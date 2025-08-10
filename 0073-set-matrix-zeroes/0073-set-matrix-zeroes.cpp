@@ -1,43 +1,35 @@
 class Solution {
-    void change(vector<vector<int>>& vec, int row, int col)
-    {
-        int i = 0, j = 0;
-        while(j < vec[0].size())
-        {
-            vec[row][j] = 0;
-            j++;
-        }
-
-        while(i < vec.size())
-        {
-            vec[i][col] = 0;
-            i++;
-        }
-    }
 public:
     void setZeroes(vector<vector<int>>& matrix) 
     {
-        int m = matrix.size(), n = matrix[0].size();
-        vector<vector<int>> vec(m, vector<int>(n, -1));
+        unordered_map<int, int> mp1, mp2;
 
-        for(int i = 0; i < m; i++)
+        for(int row = 0; row < matrix.size(); row++)
         {
-            for(int j = 0; j < n; j++)
+            for(int col = 0; col < matrix[0].size(); col++)
             {
-                if(matrix[i][j] == 0)
-                    change(vec, i, j);
+                if(matrix[row][col] == 0)
+                {
+                    mp1[row]++;
+                    mp2[col]++;
+                }
             }
         }
 
-        for(int i = 0; i < m; i++)
+        for(auto row: mp1)
         {
-            for(int j = 0; j < n; j++)
+            for(int col = 0; col < matrix[0].size(); col++)
             {
-                if(vec[i][j] == -1)
-                    vec[i][j] = matrix[i][j];
+                matrix[row.first][col] = 0;
             }
         }
 
-        matrix = vec;
+        for(auto col: mp2)
+        {
+            for(int row = 0; row < matrix.size(); row++)
+            {
+                matrix[row][col.first] = 0;
+            }
+        }
     }
 };
