@@ -395,6 +395,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3227-find-missing-and-repeated-values](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3244-minimize-length-of-array-using-operations](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3244-minimize-length-of-array-using-operations) |
+| [3278-find-the-number-of-ways-to-place-people-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3324-split-the-array](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3324-split-the-array) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
@@ -786,6 +787,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
+| [3278-find-the-number-of-ways-to-place-people-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3351-maximize-happiness-of-selected-children](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3351-maximize-happiness-of-selected-children) |
 | [3430-count-days-without-meetings](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3430-count-days-without-meetings) |
 ## String
@@ -964,6 +966,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3227-find-missing-and-repeated-values](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3244-minimize-length-of-array-using-operations](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3244-minimize-length-of-array-using-operations) |
+| [3278-find-the-number-of-ways-to-place-people-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 ## Recursion
 |  |
 | ------- |
@@ -1608,6 +1611,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1349-check-if-it-is-a-straight-line](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
+| [3278-find-the-number-of-ways-to-place-people-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 ## Topological Sort
 |  |
 | ------- |
@@ -1629,6 +1633,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0900-reordered-power-of-2](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0900-reordered-power-of-2) |
 | [1656-count-good-triplets](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1993-sum-of-all-subset-xor-totals) |
+| [3278-find-the-number-of-ways-to-place-people-i](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 ## Bitmask
 |  |
 | ------- |
