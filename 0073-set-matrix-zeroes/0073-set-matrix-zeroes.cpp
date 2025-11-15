@@ -2,33 +2,40 @@ class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) 
     {
-        unordered_map<int, int> mp1, mp2;
-
-        for(int row = 0; row < matrix.size(); row++)
+        unordered_map<int, bool> row, col;
+        for(int i = 0; i < matrix.size(); i++)
         {
-            for(int col = 0; col < matrix[0].size(); col++)
+            for(int j = 0; j < matrix[0].size(); j++)
             {
-                if(matrix[row][col] == 0)
+                if(matrix[i][j] == 0)
                 {
-                    mp1[row]++;
-                    mp2[col]++;
+                    row[i] = true;
+                    col[j] = true;
                 }
             }
         }
 
-        for(auto row: mp1)
+        // Checking row:
+        for(int i = 0; i < matrix.size(); i++)
         {
-            for(int col = 0; col < matrix[0].size(); col++)
+            if(row[i])
             {
-                matrix[row.first][col] = 0;
+                for(int j = 0; j < matrix[0].size(); j++)
+                {
+                    matrix[i][j] = 0;
+                }
             }
         }
 
-        for(auto col: mp2)
+        // Checking col:
+        for(int j = 0; j < matrix[0].size(); j++)
         {
-            for(int row = 0; row < matrix.size(); row++)
+            if(col[j])
             {
-                matrix[row][col.first] = 0;
+                for(int i = 0; i < matrix.size(); i++)
+                {
+                    matrix[i][j] = 0;
+                }
             }
         }
     }
