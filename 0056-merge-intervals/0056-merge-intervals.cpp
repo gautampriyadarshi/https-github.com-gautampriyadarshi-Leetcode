@@ -9,15 +9,20 @@ public:
         for(int i = 1; i < intervals.size(); ++i)
         {
             vector<int> vec = intervals[i];
-            if(vec[0] <= help[1])
+
+            if(help[1] >= vec[0]) {
                 help[1] = max(help[1], vec[1]);
-            else
-            {
+            }
+            else {
                 ans.push_back(help);
                 help = vec;
+                vec.clear();
             }
         }
+
         ans.push_back(help);
+        help.clear();
+
         return ans;
     }
 };
