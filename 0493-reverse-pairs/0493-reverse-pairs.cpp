@@ -1,62 +1,88 @@
 class Solution {
-private: 
-    void merge(vector<int>& nums, int low, int mid, int high, int& reversePairsCount)
+    int rev(vector<int>& a,vector<int>& b)
     {
-        int j = mid+1;
-        for(int i=low; i<=mid; i++){
-            while(j<=high && nums[i] > 2*(long long)nums[j]){
+        int count = 0, i = 0, j = 0;
+
+        while(i < a.size() && j < b.size())
+        {
+            if((long long)a[i] > (long long)2*b[j])
+            {
+                count += a.size()-i;
                 j++;
             }
-            reversePairsCount += j-(mid+1);
+            else 
+                i++;
         }
-        int size = high-low+1;
-        vector<int> temp(size, 0);
-        int left = low, right = mid+1, k=0;
-        while(left<=mid && right<=high){
-            if(nums[left] < nums[right]){
-                temp[k++] = nums[left++];
+        return count;
+    }
+
+    void marge(vector<int>& a, vector<int>& b, vector<int>& nums)
+    {
+        int i = 0, j = 0, k = 0;
+        while(i < a.size() && j < b.size())
+        {
+            if(a[i] < b[j]) 
+            {
+                nums[k] = a[i];
+                i++;
+                k++;
             }
-            else{
-                temp[k++] = nums[right++];
+            else
+            {
+                nums[k] = b[j];
+                j++;
+                k++;
             }
         }
-        while(left<=mid){
-            temp[k++] = nums[left++]; 
+
+        if(i == a.size())
+        {
+            while(j < b.size())
+            {
+                nums[k] = b[j];
+                j++;
+                k++;
+            }
         }
-        while(right<=high){
-            temp[k++] = nums[right++]; 
-        }
-        int m=0;
-        for(int i=low; i<=high; i++){
-            nums[i] = temp[m++];
+        
+        if(j == b.size())
+        {
+            while(i < a.size())
+            {
+                nums[k] = a[i];
+                i++;
+                k++;
+            }
         }
     }
 
-    void mergeSort(vector<int>& nums, int low, int high, int& reversePairsCount){
-        if(low >= high){
-            return;
+    int merge(vector<int>& nums)
+    {
+        if(nums.size() == 1) 
+            return 0;
+
+        int n = nums.size(), count = 0;
+        int n1 = n/2, n2 = n-n/2;
+        vector<int> a(n1), b(n2);
+        
+        for(int i = 0; i < n1; i++) {
+            a[i] = nums[i];
         }
-        int mid = (low + high) >> 1;
-        mergeSort(nums, low, mid, reversePairsCount);
-        mergeSort(nums, mid+1, high, reversePairsCount);
-        merge(nums, low, mid, high, reversePairsCount);
+
+        for(int i = 0; i < n2; i++) {
+            b[i] = nums[i + n1];
+        }
+
+        count += merge(a);
+        count += merge(b);
+        count += rev(a,b);
+        marge(a,b,nums);
+
+        return count;
     }
 public:
-    int reversePairs(vector<int>& nums) {
-        int reversePairsCount = 0;
-        mergeSort(nums, 0, nums.size()-1, reversePairsCount);
-        return reversePairsCount;
-
-        /*
-        int count = 0;
-        for(int i = 0; i < nums.size()-1; i++)
-        {
-            for(int j = i+1; j < nums.size(); j++)
-            {
-                if(nums[i] > 2 * (long long)nums[j])
-                    count++;
-            }
-        }
-        return count;   */
+    int reversePairs(vector<int>& nums) 
+    {
+        return merge(nums);
     }
 };
