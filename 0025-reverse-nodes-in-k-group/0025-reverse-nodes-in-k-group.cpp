@@ -9,7 +9,7 @@
  * };
  */
 class Solution {
-    void insert(vector<int> &vec, vector<int> help)
+    void add(vector<int> &vec, vector<int> help)
     {
         for(int i = 0; i < help.size(); i++)
         {
@@ -20,8 +20,8 @@ public:
     ListNode* reverseKGroup(ListNode* head, int k) 
     {
         vector<int> vec, help;
-        int x = 0;
         ListNode* node = head;
+        int x = 0;
 
         while(node != NULL)
         {
@@ -31,7 +31,7 @@ public:
             if(x == k)
             {
                 reverse(help.begin(), help.end());
-                insert(vec, help);
+                add(vec, help);
                 help.clear();
                 x = 0;
             }
@@ -40,21 +40,21 @@ public:
 
         if(x != 0)
         {
-            insert(vec, help);
+            add(vec, help);
             help.clear();
             x = 0;
         }
 
         ListNode* ans = new ListNode(vec[0]);
         ListNode* nd = ans;
+
         for(int i = 1; i < vec.size(); i++)
         {
             ListNode* n = new ListNode(vec[i]);
             ans->next = n;
-            ans = n;
+            ans = ans->next;
         }
-        vec.clear();
-        
+
         return nd;
     }
 };
