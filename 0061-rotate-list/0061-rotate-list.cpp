@@ -14,8 +14,8 @@ public:
     {
         if(head == NULL)
             return NULL;
-            
-        vector<int> vec, main;
+
+        vector<int> vec, help;
         ListNode* node = head;
 
         while(node != NULL)
@@ -26,25 +26,26 @@ public:
 
         int n = vec.size();
         int x = k % n;
-        for(int i = n-x; i < n; i++)
-        {
-            main.push_back(vec[i]);
+
+        for(int i = n-x; i < n; i++) {
+            help.push_back(vec[i]);
         }
 
-        for(int i = 0; i < n-x; i++)
-        {
-            main.push_back(vec[i]);
+        for(int i = 0; i < n-x; i++) {
+            help.push_back(vec[i]);
         }
-        vec.clear();
 
-        ListNode* ans = new ListNode(main[0]);
+        ListNode* ans = new ListNode(help[0]);
         ListNode* nd = ans;
-        for(int i = 1; i < main.size(); i++)
+
+        for(int i = 1; i < n; i++)
         {
-            ListNode* n = new ListNode(main[i]);
-            ans->next = n;
-            ans = n;
+            ListNode* n = new ListNode(help[i]);
+            nd->next = n;
+            nd = nd->next;
         }
-        return nd;
+        help.clear();
+        vec.clear();
+        return ans;
     }
 };
