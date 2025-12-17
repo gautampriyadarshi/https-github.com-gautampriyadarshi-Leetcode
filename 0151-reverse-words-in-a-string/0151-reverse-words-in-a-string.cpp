@@ -2,38 +2,39 @@ class Solution {
 public:
     string reverseWords(string s) 
     {
-        if(s.size() == 1)
-            return s;
-
         vector<string> vec;
-        string st = "", ans = "";
+        string help = "", x = "";
+
         for(int i = 0; i < s.size(); i++)
         {
             if(s[i] != ' ')
-                st += s[i];
+                help += s[i];
             else
             {
-                if(st == "")
+                if(help == "")
                     continue;
                 else
                 {
-                    vec.push_back(st);
-                    st = "";
+                    vec.push_back(help);
+                    help = "";
                 }
             }
         }
 
-        if(st != "")
-            vec.push_back(st);
-        
+        if(help != "")
+            vec.push_back(help);
+
         reverse(vec.begin(), vec.end());
-        for(int i = 0; i < vec.size()-1; i++)
+
+        for(int i = 0; i < vec.size(); i++)
         {
-            ans += vec[i] + " ";
+            if(i != vec.size()-1)
+                x += vec[i] + " ";
+            else
+                x += vec[i];
         }
-        ans += vec[vec.size()-1];
         vec.clear();
         
-        return ans;
+        return x;
     }
 };
