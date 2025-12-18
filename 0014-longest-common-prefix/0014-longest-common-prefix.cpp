@@ -1,22 +1,35 @@
 class Solution {
-public:
-    string longestCommonPrefix(vector<string>& str) 
+    static bool check(const string& a, const string& b)
     {
-        if(str.size() == 1)
-            return str[0];
-        
-        sort(str.begin(), str.end());
-        int n = str.size();
-        string ans = "";
-        string first = str[0], last = str[n-1];
-        for(int i = 0; i < min(first.size(), last.size()); i++)
-        {
-            if(first[i] != last[i])
-                return ans;
-            
-            ans += first[i];
-        }
+        return a.size() < b.size();
+    }
+public:
+    string longestCommonPrefix(vector<string>& strs) 
+    {
+        sort(strs.begin(), strs.end(), check);
+        string ans = strs[0], test = "";
 
+        int j = 0, k = 0;
+        for(int i = 1; i < strs.size(); i++)
+        {
+            while(j < ans.size())
+            {
+                if(ans[0] != strs[i][0])
+                    return "";
+
+                if(ans[j] == strs[i][k])
+                {
+                    test += ans[j];
+                    j++;
+                    k++;
+                }
+                else
+                    break;
+            }
+            ans = test;
+            test = "";
+            j = 0; k = 0;
+        }
         return ans;
     }
 };
