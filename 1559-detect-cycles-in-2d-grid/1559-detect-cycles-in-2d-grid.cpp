@@ -6,7 +6,7 @@ class Solution {
         int dRow[] = {-1, 0, +1, 0};
         int dCol[] = {0, +1, 0, -1};
 
-        queue<pair<pair<int, int>, pair<int, int>>> q;
+        queue<pair<pair<int, int>, pair<int, int>>> q;  // queue<pair<child, parent>> q;
         q.push({{row, col}, {pRow, pCol}});
 
         while(!q.empty())
@@ -17,8 +17,8 @@ class Solution {
 
             for(int i = 0; i < 4; i++)
             {
-                int nRow = dRow[i] + curR;
-                int nCol = dCol[i] + curC;
+                int nRow = dRow[i] + curR;  // curR not row
+                int nCol = dCol[i] + curC;  // curC not col
 
                 if(nRow >= 0 && nRow < n && nCol >= 0 && nCol < m 
                 && grid[nRow][nCol] == grid[row][col])
@@ -57,3 +57,6 @@ public:
         return false;
     }
 };
+
+// SC: O(n*m)
+// TC: O(n*m)
