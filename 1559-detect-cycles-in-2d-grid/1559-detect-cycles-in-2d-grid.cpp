@@ -35,6 +35,34 @@ class Solution {
         }
         return false;
     }
+
+    bool dfs(int row, int col, int pRow, int pCol, vector<vector<int>> &vis, vector<vector<char>>& grid)
+    {
+        int n = grid.size();
+        int m = grid[0].size();
+        int dRow[] = {-1, 0, +1, 0};
+        int dCol[] = {0, +1, 0, -1};
+
+        for(int i = 0; i < 4; i++)
+        {
+            int nRow = dRow[i] + row;  // row 
+            int nCol = dCol[i] + col;  // col
+
+            if(nRow >= 0 && nRow < n && nCol >= 0 && nCol < m 
+            && grid[nRow][nCol] == grid[row][col])
+            {
+                if(vis[nRow][nCol] == 0)
+                {
+                    vis[nRow][nCol] = 1;
+                    if (dfs(nRow, nCol, row, col, vis, grid))
+                        return true;
+                }
+                else if(pRow != nRow && pCol != nCol)
+                    return true;
+            }
+        }
+        return false;
+    }
 public:
     bool containsCycle(vector<vector<char>>& grid) 
     {
@@ -49,7 +77,10 @@ public:
                 if(!vis[i][j])
                 { 
                     vis[i][j] = 1;
-                    if(bfs(i, j, -1, -1, vis, grid))
+                    // if(bfs(i, j, -1, -1, vis, grid))
+                    //     return true;
+
+                    if(dfs(i, j, -1, -1, vis, grid))
                         return true;
                 }
             }
