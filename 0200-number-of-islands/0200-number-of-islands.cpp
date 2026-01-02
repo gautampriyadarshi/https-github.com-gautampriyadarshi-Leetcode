@@ -22,7 +22,8 @@ class Solution {
                 int nRow = dRow[i] + row;
                 int nCol = dCol[i] + col;
 
-                if(nRow >= 0 && nRow < n && nCol >= 0 && nCol < m && grid[nRow][nCol] == '1' && !vis[nRow][nCol])
+                if(nRow >= 0 && nRow < n && nCol >= 0 && nCol < m 
+                && grid[nRow][nCol] == '1' && !vis[nRow][nCol])
                 {
                     vis[nRow][nCol] = 1;
                     q.push({nRow, nCol});
@@ -48,15 +49,6 @@ public:
                     bfs(i, j, vis, grid);
                 }
             }
-        }
-
-        for(int i = 0; i < n; i++)
-        {
-            for(int j = 0; j < m; j++)
-            {
-                cout << vis[i][j] << " ";
-            }
-            cout << endl;
         }
         return count;
     }
