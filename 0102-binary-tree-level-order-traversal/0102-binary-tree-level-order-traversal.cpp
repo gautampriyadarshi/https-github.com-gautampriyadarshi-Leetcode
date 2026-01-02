@@ -20,10 +20,10 @@ public:
         q.push(root);
 
         vector<vector<int>> ans;
+        vector<int> level;
         while(!q.empty())
         {
             int size = q.size();
-            vector<int> level;
             for(int i = 0; i < size; i++)
             {
                 TreeNode* node = q.front();
