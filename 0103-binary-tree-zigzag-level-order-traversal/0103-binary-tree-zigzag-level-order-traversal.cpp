@@ -21,11 +21,11 @@ public:
 
         vector<vector<int>> ans;
         int count = 0;
+        vector<int> level;
         while(!q.empty())
         {
             count++;
             int size = q.size();
-            vector<int> level;
             for(int i = 0; i < size; i++)
             {
                 TreeNode* node = q.front();
