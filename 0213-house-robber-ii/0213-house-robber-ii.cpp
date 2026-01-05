@@ -1,4 +1,36 @@
 class Solution {
+    int Rec(int ind, vector<int> &nums)
+    {
+        if (ind == 0)
+            return nums[ind]; // ind is 0 means ind+1 was not picked and ind+2 was picked.
+
+        if (ind < 0)
+            return 0;
+
+        // Adjacent elements need to be skipped thats's why we did (ind - 2);
+        int pick = nums[ind] + Rec(ind - 2, nums);
+        int notPick = 0 + Rec(ind - 1, nums);
+
+        return max(pick, notPick);
+    }
+
+    int Mem(int ind, vector<int> &nums, vector<int> &dp)
+    {
+        if (ind == 0)
+            return nums[ind];
+
+        if (ind < 0)
+            return 0;
+
+        if (dp[ind] != -1)
+            return dp[ind];
+
+        int pick = nums[ind] + Mem(ind - 2, nums, dp);
+        int notPick = 0 + Mem(ind - 1, nums, dp);
+
+        return dp[ind] = max(pick, notPick);
+    }
+
     int maximumNonAdjacentSum(vector<int> &vec)
     {
         int n = vec.size();
@@ -39,6 +71,15 @@ public:
                 temp2.push_back(nums[i]);
         }
 
-        return max(maximumNonAdjacentSum(temp1), maximumNonAdjacentSum(temp2));
+        int t1 = temp1.size(), t2 = temp2.size();
+
+        // Recursion:
+        // return max(Rec(t1 - 1, temp1), Rec(t2 - 1, temp2));
+
+        // Memoization:
+        vector<int> dp1(t1, -1), dp2(t2, -1);
+        return max(Mem(t1 - 1, temp1, dp1), Mem(t2 - 1, temp2, dp2));
+
+        // return max(maximumNonAdjacentSum(temp1), maximumNonAdjacentSum(temp2));
     }
 };
