@@ -10,7 +10,7 @@
  * };
  */
 class Solution {
-    void solve(TreeNode* root, int targetSum, int currentSum, vector<int> &help, vector<vector<int>> &ans) {
+    void solve(TreeNode* root, int targetSum, int &currentSum, vector<int> &help, vector<vector<int>> &ans) {
         if (!root) return;
         
         help.push_back(root->val);
@@ -26,14 +26,16 @@ class Solution {
         solve(root->right, targetSum, currentSum, help, ans);
 
         // Backtrack: STRICTLY REQUIRED here because we passed by Reference
-        help.pop_back(); 
+        help.pop_back();
+        currentSum -= root->val; 
     }
 
 public:
     vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
         vector<vector<int>> ans;
         vector<int> help;
-        solve(root, targetSum, 0, help, ans);
+        int currentSum = 0;
+        solve(root, targetSum, currentSum, help, ans);
         return ans;
     }
 };
