@@ -10,7 +10,7 @@
  * };
  */
 class Solution {
-    int getHeight(TreeNode* root) 
+   int getHeight(TreeNode* root) 
     {
         if (!root) 
             return 0;
