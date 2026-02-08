@@ -19,17 +19,6 @@ public:
                 mp[s[j++]]--;
             }
             maxi = max(count, maxi);
-
-            /* My approach but 408 cases passed only:-
-            if(mp[s[i]] == 0)
-                mp[s[i]]++;
-            else
-            {
-                int x = mp.size();
-                maxi = max(maxi, x);
-                mp.clear();
-                mp[s[i]]++;
-            }   */
         }
         return maxi;
     }
