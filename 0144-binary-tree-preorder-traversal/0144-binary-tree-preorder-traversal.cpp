@@ -10,20 +10,20 @@
  * };
  */
 class Solution {
-    void preorder(TreeNode* root, vector<int> &ans)
+    void solve(TreeNode* root, vector<int> &ans)
     {
         if(!root)
             return;
-
+        
         ans.push_back(root->val);
-        preorder(root->left, ans);
-        preorder(root->right, ans);
+        solve(root->left, ans);
+        solve(root->right, ans);
     }
 public:
     vector<int> preorderTraversal(TreeNode* root) 
     {
         vector<int> ans;
-        preorder(root, ans);
+        solve(root, ans);
         return ans;
     }
 };
