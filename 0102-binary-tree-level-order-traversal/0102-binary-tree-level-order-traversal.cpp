@@ -16,14 +16,14 @@ public:
         if(!root)
             return {};
         
+        vector<vector<int>> ans;
         queue<TreeNode*> q;
         q.push(root);
 
-        vector<vector<int>> ans;
-        vector<int> level;
         while(!q.empty())
         {
             int size = q.size();
+            vector<int> help;
             for(int i = 0; i < size; i++)
             {
                 TreeNode* node = q.front();
@@ -35,10 +35,10 @@ public:
                 if(node->right)
                     q.push(node->right);
                 
-                level.push_back(node->val);
+                help.push_back(node->val);
             }
-            ans.push_back(level);
-            level.clear();
+            ans.push_back(help);
+            help.clear();
         }
         return ans;
     }
