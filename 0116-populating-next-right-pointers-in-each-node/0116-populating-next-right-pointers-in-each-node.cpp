@@ -25,6 +25,7 @@ public:
         
         queue<Node*> q;
         q.push(root);
+        root->next = NULL;
 
         while(!q.empty())
         {
@@ -40,19 +41,17 @@ public:
                 
                 if(node->right)
                     q.push(node->right);
-                
+
                 level.push_back(node);
             }
-            
-            if(level.size() == 1)
-                level[0]->next = NULL;
-            
+
             Node* nd = level[0];
             for(int i = 1; i < level.size(); i++)
             {
                 nd->next = level[i];
                 nd = nd->next;
             }
+
             nd->next = NULL;
             level.clear();
         }
