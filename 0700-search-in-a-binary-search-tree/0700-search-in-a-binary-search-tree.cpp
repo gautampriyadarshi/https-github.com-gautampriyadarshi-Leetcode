@@ -17,9 +17,11 @@ class Solution {
         
         if(root->val == val)
             node = root;
-
-        inorder(root->left , node, val);
-        inorder(root->right, node, val);
+        
+        if(root->val > val)
+            inorder(root->left , node, val);
+        else    
+            inorder(root->right, node, val);
     }
 public:
     TreeNode* searchBST(TreeNode* root, int val) 
