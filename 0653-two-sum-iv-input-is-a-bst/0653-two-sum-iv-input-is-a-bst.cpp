@@ -15,24 +15,28 @@ class Solution {
         if(!root)
             return;
         
-        inorder(root->left, vec);
-        vec.push_back(root->val);
+        inorder(root->left , vec);
+        vec.push_back( root->val);
         inorder(root->right, vec);
     }
 public:
     bool findTarget(TreeNode* root, int k) 
     {
+        if(!root)
+            return false;
+        
         vector<int> vec;
         inorder(root, vec);
 
-        for(int i = 0; i < vec.size()-1; i++)
+        map<int, bool> mp;
+        for(int i = 0; i < vec.size(); i++)
         {
-            for(int j = i+1; j < vec.size(); j++)
-            {
-                if(vec[i] + vec[j] == k)
-                    return true;
-            }
+            if(mp[k-vec[i]])
+                return true;
+
+            mp[vec[i]] = true;
         }
+
         return false;
     }
 };
