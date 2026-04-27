@@ -15,8 +15,8 @@ class Solution {
         if(!root)
             return;
         
-        pq.push(root->val);
         solve(root->left, pq);
+        pq.push(root->val);     // Inorder traversal to get answer quickly.
         solve(root->right, pq);
     }
 public:
