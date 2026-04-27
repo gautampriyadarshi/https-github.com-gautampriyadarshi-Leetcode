@@ -10,23 +10,26 @@
  * };
  */
 class Solution {
-    void inorder(TreeNode* root, vector<int> &ans)
+    void solve(TreeNode* root, priority_queue<int, vector<int>, greater<int>> &pq)
     {
         if(!root)
             return;
         
-        inorder(root->left, ans);
-        ans.push_back(root->val);
-        inorder(root->right, ans);
+        pq.push(root->val);
+        solve(root->left, pq);
+        solve(root->right, pq);
     }
 public:
     int kthSmallest(TreeNode* root, int k) 
     {
-        if(!root)
-            return 0;
-            
-        vector<int> ans;
-        inorder(root, ans);
-        return ans[k-1];
+        priority_queue<int, vector<int>, greater<int>> pq;
+        solve(root, pq);
+
+        while(k > 1)
+        {
+            pq.pop();
+            k--;
+        }
+        return pq.top();
     }
 };
