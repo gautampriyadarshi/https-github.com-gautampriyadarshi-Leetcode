@@ -1,36 +1,22 @@
 class Solution {
-public:
-    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) 
+    void dfs(vector<vector<int>>& image, int i, int j, int newColor, int orgColor)
     {
-        int st = image[sr][sc], n = image.size(), m = image[0].size();
+        if(i < 0 || j < 0 || i >= image.size() || j >= image[0].size() 
+        || image[i][j] != orgColor || image[i][j] == newColor) 
+            return; 
+
+        image[i][j] = newColor; // On reaching to a cell giving it required color
         
-        if(image[sr][sc] == color) 
-            return image;
-
-        queue<pair<int,int>> q;
-        q.push({sr,sc});
-        image[sr][sc] = color;
-
-        int drow[] = {-1,0,1,0};
-        int dcol[] = {0,-1,0,1};
-
-        while(!q.empty())
-        {
-            auto [row,col] = q.front();
-            q.pop();
-
-            for(int i = 0; i < 4; i++)
-            {
-                int nrow = row + drow[i];
-                int ncol = col + dcol[i];
-
-                if(nrow >= 0 && nrow < n && ncol >= 0 && ncol < m && image[nrow][ncol] == st)
-                {
-                    image[nrow][ncol] = color;
-                    q.push({nrow,ncol});
-                }
-            }
-        }
+        dfs(image, i-1, j, newColor, orgColor); // up:    {row-1, col}
+        dfs(image, i, j+1, newColor, orgColor); // right: {row, col+1}
+        dfs(image, i+1, j, newColor, orgColor); // down:  {row+1, col}
+        dfs(image, i, j-1, newColor, orgColor); // left:  {row, col-1}
+    }
+public:
+    vector<vector<int>> floodFill(vector<vector<int>>& image, 
+    int sr, int sc, int color) 
+    {
+        dfs(image, sr, sc, color, image[sr][sc]);
         return image;
     }
 };
