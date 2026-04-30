@@ -8,13 +8,11 @@ public:
             pq.push(nums[i]);
         }
 
-        for(int i = 0; i < k; i++)
+        while(k > 1)
         {
-            if(i == k-1)
-                return pq.top();
-            
             pq.pop();
+            k--;
         }
-        return -1;
+        return pq.top();
     }
 };
