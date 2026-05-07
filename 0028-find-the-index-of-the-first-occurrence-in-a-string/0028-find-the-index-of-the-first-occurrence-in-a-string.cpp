@@ -2,29 +2,45 @@ class Solution {
 public:
     int strStr(string haystack, string needle) 
     {
-        if(needle.size() > haystack.size())
-            return -1;
+        int m = haystack.size();
+        int n = needle.size();
 
-        int i = 0, j = 0;
-        while(i < haystack.size())
+        if (n == 0) 
+            return 0;
+
+        // 1. Preprocess needle to create LPS array
+        vector<int> lps(n, 0);
+        int prevLPS = 0, i = 1;
+        while (i < n) 
         {
-            if(haystack[i] != needle[j])
-                i++;
+            if (needle[i] == needle[prevLPS])
+                lps[i++] = ++prevLPS;
+            else if (prevLPS == 0)
+                lps[i++] = 0;
             else
-            {
-                int ans = i, size = needle.size();
-                string k = "";
-                while(size--)
-                {
-                    if(i < haystack.size())
-                        k += haystack[i++];
-                }
-                if(k == needle) 
-                    return ans;
+                prevLPS = lps[prevLPS - 1];
+        }
 
-                i = ans+1;
+        // 2. Search haystack using LPS
+        int hayIdx = 0, needleIdx = 0;
+        while (hayIdx < m) {
+            if (haystack[hayIdx] == needle[needleIdx]) {
+                hayIdx++;
+                needleIdx++;
+            } else {
+                if (needleIdx == 0) {
+                    hayIdx++;
+                } else {
+                    // Use LPS to skip unnecessary comparisons
+                    needleIdx = lps[needleIdx - 1];
+                }
+            }
+            
+            if (needleIdx == n) {
+                return hayIdx - n; // Match found!
             }
         }
+
         return -1;
     }
 };
