@@ -20,10 +20,10 @@ public:
         queue<TreeNode*> q;
         q.push(root);
 
+        vector<int> help;
         while(!q.empty())
         {
             int size = q.size();
-            vector<int> help;
             for(int i = 0; i < size; i++)
             {
                 TreeNode* node = q.front();
