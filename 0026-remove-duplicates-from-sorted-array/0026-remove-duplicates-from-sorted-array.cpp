@@ -7,13 +7,13 @@ public:
         {
             mp[nums[i]]++;
         }
-
+        
         nums.clear();
         for(auto x: mp)
         {
             nums.push_back(x.first);
         }
-
-        return nums.size();
+        
+        return mp.size();
     }
 };
