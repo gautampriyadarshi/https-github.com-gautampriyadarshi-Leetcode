@@ -27,6 +27,8 @@ public:
             
             node2 = node2->next;
         }
+        mp.clear();
+        
         return NULL;
     }
 };
