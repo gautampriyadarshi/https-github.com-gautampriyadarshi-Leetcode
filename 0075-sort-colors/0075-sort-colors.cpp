@@ -20,19 +20,16 @@ public:
             {
                 nums.push_back(0);
                 zero--;
-                continue;
             }
             else if(one > 0)
             {
                 nums.push_back(1);
                 one--;
-                continue;
             }
             else
             {
                 nums.push_back(2);
                 two--;
-                continue;
             }
         }
     }
