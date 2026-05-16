@@ -12,7 +12,7 @@ class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) 
     {
-        if(head == NULL)
+        if(!head)
             return NULL;
 
         vector<int> vec, help;
@@ -46,6 +46,7 @@ public:
         }
         help.clear();
         vec.clear();
+        
         return ans;
     }
 };
