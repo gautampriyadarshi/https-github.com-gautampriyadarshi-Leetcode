@@ -26,9 +26,9 @@ public:
         }
 
         vector<vector<int>> ans;
+        vector<int> x;
         for(int i = 0; i < vec.size(); i++)
         {
-            vector<int> x;
             for(int j = 0; j < vec[0].size(); j++)
             {
                 if(vec[i][j] != -1)
