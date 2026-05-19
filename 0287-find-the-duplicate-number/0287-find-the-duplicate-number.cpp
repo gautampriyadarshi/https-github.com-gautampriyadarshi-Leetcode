@@ -2,20 +2,20 @@ class Solution {
 public:
     int findDuplicate(vector<int>& nums) 
     {
-        int slow = nums[0], fast = nums[0];
-
-        do 
+        sort(nums.begin(), nums.end());
+        int x = nums[0], ans = INT_MAX;
+        
+        for(int i = 1; i < nums.size(); i++)
         {
-            slow = nums[slow];
-            fast = nums[nums[fast]];
-        } while(slow != fast);
-
-        fast = nums[0];
-        while(slow != fast)
-        {
-            slow = nums[slow];
-            fast = nums[fast];
+            x ^= nums[i];   // XOR of same number is 0.
+            
+            if(x == 0) {
+                ans = nums[i];
+                break;
+            }
+            else
+                x = nums[i];
         }
-        return slow;
+        return ans;
     }
 };
