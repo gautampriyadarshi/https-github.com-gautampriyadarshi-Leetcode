@@ -2,26 +2,35 @@ class Solution {
 public:
     int singleNonDuplicate(vector<int>& nums) 
     {
-        if(nums.size() == 1)
-            return nums[0];
-            
-        int ans = -1;
-        for(int i = 1; i < nums.size()-1; i++)
+        int l = 0, r = nums.size() - 1;
+        
+        while (l < r) 
         {
-            if(nums[i] != nums[i-1] && nums[i] != nums[i+1])
+            int mid = l + (r - l) / 2;
+            
+            // We want 'mid' to always point to the start of a potential pair.
+            // Before the single element, pairs start at even indices.
+            // If 'mid' is odd, decrement it by 1 to make it even.
+            if (mid % 2 == 1) 
+                mid--;
+            
+            if (nums[mid] == nums[mid + 1]) 
             {
-                ans = nums[i];
-                break;
+                // If they match, the pattern of pairs is unbroken.
+                // The single missing element must be further to the r.
+                // We move 'l' past this current pair.
+                l = mid + 2;
+            } 
+            else 
+            {
+                // If they don't match, the pattern has been broken.
+                // The single element is either at 'mid' or somewhere to the l.
+                // We bring 'r' down to 'mid' to narrow the search space.
+                r = mid;
             }
         }
-
-        if(ans == -1)
-        {
-            if(nums[0] != nums[1])
-                ans = nums[0];
-            else
-                ans = nums[nums.size()-1];
-        }
-        return ans;
+        
+        // When l == r, the search space has shrunk to a single element.
+        return nums[l];
     }
 };
