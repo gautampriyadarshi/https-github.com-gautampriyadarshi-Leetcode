@@ -10,39 +10,37 @@
  */
 class Solution {
 public:
-    ListNode* mergeKLists(vector<ListNode*>& arr) 
+    ListNode* mergeKLists(vector<ListNode*>& lists) 
     {
-        if(arr.size() == 0)
+        if(lists.size() == 0)
             return NULL;
         
-        if(arr.size() == 1)
-            return arr[0];
-        
-        vector<int> vec;
-        int x = 0, K = arr.size();
-        while(x < K)
+        priority_queue<int, vector<int>, greater<int>> pq;
+        for(int i = 0; i < lists.size(); i++)
         {
-            ListNode* nd = arr[x];
-            while(nd != NULL)
+            ListNode* node = lists[i];
+            while(node != NULL)
             {
-                vec.push_back(nd->val);
-                nd = nd->next;
+                pq.push(node->val);
+                node = node->next;
             }
-            x++;
         }
 
-        if(vec.size() == 0)
-            return NULL;
+        if(pq.empty())
+            return NULL; 
 
-        sort(vec.begin(), vec.end());
-        ListNode* ans = new ListNode(vec[0]);
-        ListNode* temp = ans;
-        for(int i = 1; i < vec.size(); i++)
+        ListNode* root = new ListNode(pq.top());
+        pq.pop();
+        ListNode* node = root;
+
+        while(!pq.empty())
         {
-            ListNode* nd = new ListNode(vec[i]);
-            temp->next = nd;
-            temp = temp->next;
+            ListNode* nd = new ListNode(pq.top());
+            node->next = nd;
+            node = nd;
+            pq.pop();
         }
-        return ans;    
+
+        return root;
     }
 };
