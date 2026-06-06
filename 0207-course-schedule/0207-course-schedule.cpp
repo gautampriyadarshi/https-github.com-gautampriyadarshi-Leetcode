@@ -1,3 +1,6 @@
+// If cycle exists, then we need to return false.
+// TC: O(N + 2E)
+// SC: O(N)
 class Solution {
     bool dfs(int node, stack<int> &st, vector<int> &vis, vector<int> &pathVis,
     vector<vector<int>> &adj)
@@ -16,7 +19,7 @@ class Solution {
                 return true;
         }
         st.push(node);
-        pathVis[node] = 0;
+        pathVis[node] = 0;  // Backtracking
 
         return false;
     }
@@ -25,7 +28,7 @@ public:
     bool canFinish(int V, vector<vector<int>>& edges) 
     {
         vector<int> vis(V, 0);
-        vector<int> pathVis(V, 0);  // Additional added
+        vector<int> pathVis(V, 0);  // Additionally added
         vector<vector<int>> adj(V);
 
         for(int i = 0; i < edges.size(); i++)
@@ -39,10 +42,10 @@ public:
         {
             if(!vis[i])
             {
-                if(dfs(i, st, vis, pathVis, adj))    // If cycle exists then returing {}.
-                    return false;
+                if(dfs(i, st, vis, pathVis, adj))    
+                    return false;   // Cycle exists.
             }
         }
-        return true;
+        return true;    // Cycle do not exists.
     }
 };
