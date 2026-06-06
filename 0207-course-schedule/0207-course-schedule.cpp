@@ -17,6 +17,8 @@ class Solution {
             }
             else if(pathVis[it])
                 return true;
+            
+            // When both vis[it] == 1 AND pathVis[it] == 1, it means we just looped back onto your own tail! That is a true cycle.
         }
         st.push(node);
         pathVis[node] = 0;  // Backtracking
