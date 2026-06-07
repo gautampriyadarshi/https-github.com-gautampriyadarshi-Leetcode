@@ -1,3 +1,5 @@
+// SC - O(n*m)
+// TC - O(n*m) + O(4*n*m) = O(n*m)
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) 
@@ -7,18 +9,16 @@ public:
 
         // {{row, col}, time}
         queue<pair<pair<int, int>, int>> q;
-        int vis[n][m];
+        vector<vector<int>> vis(n, vector<int>(m, 0));
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
             {
-                if (grid[i][j] == 2)
+                if (grid[i][j] == 2)    // Rotten Orange found
                 {
-                    q.push({{i, j}, 0});
+                    q.push({{i, j}, 0});    // All rotten orange will be pushed
                     vis[i][j] = 2;
                 }
-                else
-                    vis[i][j] = 0;
             }
         }
 
@@ -41,7 +41,8 @@ public:
 
                 if (nRow >= 0 && nRow < n 
                     && nCol >= 0 && nCol < m 
-                    && vis[nRow][nCol] != 2 && grid[nRow][nCol] == 1)
+                    && vis[nRow][nCol] != 2 && grid[nRow][nCol] == 1)   
+                    // Orange should be fresh i.e. '1'
                 {
                     q.push({{nRow, nCol}, t + 1});
                     vis[nRow][nCol] = 2;
@@ -53,13 +54,11 @@ public:
         {
             for (int j = 0; j < m; j++)
             {
-                if (vis[i][j] != 2 && grid[i][j] == 1)
-                return -1;
+                // Not visited and fresh
+                if (vis[i][j] != 2 && grid[i][j] == 1)  
+                    return -1;
             }
         }
         return tm;
     }
 };
-
-// SC - O(n*m)
-// TC - O(n*m) + O(4*n*m) = O(n*m)
