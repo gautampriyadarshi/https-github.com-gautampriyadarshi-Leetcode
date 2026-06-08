@@ -28,12 +28,11 @@ public:
     {
         int V = graph.size();
         vector<int> color(V, -1);
-
         for(int i = 0; i < V; i++)
         {
             if(color[i] == -1)
             {
-                if(!check(i, color, graph))
+                if(check(i, color, graph) == false)
                     return false;
             }
         }
