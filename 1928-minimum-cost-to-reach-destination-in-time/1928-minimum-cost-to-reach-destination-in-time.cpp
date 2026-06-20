@@ -1,3 +1,27 @@
+/************ 
+Time Complexity: O(E*T * log(E*T))
+
+Graph Construction: Building the adjacency list takes O(E) time.
+
+Priority Queue (Dijkstra): * In standard Dijkstra, a node is processed exactly once. However, because we have two constraints (cost and time), we might visit the same node multiple times if a more expensive path gets us there faster.
+
+Because of the condition newTime < minTime [adjNode], we only push a node to the queue if it strictly improves the arrival time. Since time is an integer and capped at T, a single node can be pushed into the priority queue at most T times.
+
+This means we can traverse each of the E edges at most T times. Therefore, the maximum number of push operations to the priority queue is ET.
+
+The priority queue will hold at most E T elements. Pushing or popping from a heap of this size takes O(log(ET)) time. ************/
+
+/********** 
+Space Complexity: O(V + E*T)
+Adjacency List: Storing the graph takes O(V + E) space.
+Tracking Array: The minTime vector takes O(V) space.
+
+Priority Queue: In the absolute worst-case scenario, if many paths are explored that continually improve the time marginally, the priority queue could store up to E T elements at once. Each element is a vector of size 3, which takes O(ET) space.
+
+Combining these, the dominant term for space in the worst case is the priority queue, leaving us with an overall space complexity of O(V + E-T). *********/
+
+// Time Complexity: O(E*T * log(E*T))
+// Space Complexity: O(V + E*T)
 class Solution {
 public:
     int minCost(int maxTime, vector<vector<int>>& edges, vector<int>& passingFees) 
