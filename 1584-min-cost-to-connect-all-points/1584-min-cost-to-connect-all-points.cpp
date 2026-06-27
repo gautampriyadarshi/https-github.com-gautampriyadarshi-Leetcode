@@ -1,3 +1,5 @@
+// TC: O(n^2 * log n)
+// SC: O(n^2)
 class Solution {
 public:
     int minCostConnectPoints(vector<vector<int>>& points) 
@@ -47,3 +49,18 @@ public:
         return sum;
     }
 };
+
+/******** 
+// TC: 
+1. Building the Graph: O(n^2)
+2. Prim's Algorithm (Priority Queue): O(n^2 * log n)
+ - Pushing to or popping from a heap of size E takes O(log E) time.
+ - Since E = n^2, the heap operations take O(log(n^2)), which drops the constant to become O(log n).
+ - You process up to E edges, meaning the total time spent pushing and popping is O(E * log n) -> O(n^2 * log n).
+ - O(n^2) + O(n^2 * log n) -> O(n^2 * log n).
+
+// SC:
+ - Adjacency List (adj): O(n^2)
+ - Priority Queue (pq): O(n^2)
+ - Visited Array (vis): O(n)
+ **********/
