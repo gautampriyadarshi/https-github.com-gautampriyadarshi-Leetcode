@@ -1,18 +1,18 @@
 class Solution {
     int Rec(int ind, int buy, vector<int>& prices, int n) 
     { 
-        if(ind == n) 
-            return 0; 
+        if(ind == n)
+            return 0;
+        
+        int profit = 0;
 
-        int profit = 0; 
-
-        if(buy) 
-            profit = max( -prices[ind] + Rec(ind+1, 0, prices, n), 
-                        0 + Rec(ind+1, 1, prices, n)); 
-        else 
-            profit = max(prices[ind] + Rec(ind+1, 1, prices, n), 
-                        0 + Rec(ind+1, 0, prices, n)); 
-
+        if(buy)
+            profit = max(-prices[ind] + Rec(ind+1, 0, prices, n),   // Bought
+                        0 + Rec(ind+1, 1, prices, n));              // Not bought
+        else
+            profit = max(prices[ind] + Rec(ind+1, 1, prices, n),    // Sold
+                        0 + Rec(ind+1, 0, prices, n));              // Not Sold
+        
         return profit;
     }
 
@@ -35,53 +35,6 @@ class Solution {
 
         return dp[ind][buy] = profit;
     }
-
-    int Tab(vector<int>& prices)
-    {
-        int n = prices.size();
-        vector<vector<int>> dp(n+1, vector<int>(2, 0));
-
-        dp[n][0] = dp[n][1] = 0;
-
-        for(int ind = n-1; ind >= 0; ind--)
-        {
-            for(int buy = 0; buy <= 1; buy++)
-            {
-                int profit = 0; 
-                if(buy) 
-                    profit = max(-prices[ind] + dp[ind+1][0], 0 + dp[ind+1][1]); 
-                else 
-                    profit = max(prices[ind] + dp[ind+1][1], 0 + dp[ind+1][0]); 
-
-                dp[ind][buy] = profit;
-            }
-        }
-        return dp[0][1];
-    }
-
-    int spaceOptimization(vector<int>& prices)
-    {
-        int n = prices.size();
-        vector<int>ahead(2, 0), curr(2, 0);
-
-        ahead[0] = ahead[1] = 0;
-
-        for(int ind = n-1; ind >= 0; ind--)
-        {
-            for(int buy = 0; buy <= 1; buy++)
-            {
-                int profit = 0; 
-                if(buy) 
-                    profit = max(-prices[ind] + ahead[0], 0 + ahead[1]); 
-                else 
-                    profit = max(prices[ind] + ahead[1], 0 + ahead[0]); 
-
-                curr[buy] = profit;
-            }
-            ahead = curr;
-        }
-        return ahead[1];
-    }
 public:
     int maxProfit(vector<int>& prices) 
     {
@@ -91,13 +44,7 @@ public:
         // return Rec(0, 1, prices, n);
 
         // Memoization:
-        // vector<vector<int>> dp(n, vector<int>(2, -1));
-        // return Mem(0, 1, prices, n, dp);
-
-        // Tabulation:
-        // return Tab(prices);
-
-        // Space Optimization:
-        return spaceOptimization(prices);
+        vector<vector<int>> dp(n, vector<int>(2, -1));
+        return Mem(0, 1, prices, n, dp);
     }
 };
