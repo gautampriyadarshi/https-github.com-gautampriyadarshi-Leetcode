@@ -1,15 +1,15 @@
 class Solution {
     int Rec(int ind, int prev_ind, vector<int>& nums, int n) 
     { 
-        if(ind == n) 
-            return 0; 
-
-        int len = 0 + Rec(ind+1, prev_ind, nums, n); 
-
-        if (prev_ind == -1 || nums[ind] > nums[prev_ind]) 
-            len = max(len, 1 + Rec(ind+1, ind, nums, n)); 
+        if(ind == n)
+            return 0;
         
-        return len; 
+        int len = 0 + Rec(ind + 1, prev_ind, nums, n);
+
+        if(prev_ind == -1 || nums[prev_ind] < nums[ind])
+            len = max(len, 1 + Rec(ind+1, ind, nums, n));
+        
+        return len;
     }
 
     int Mem(int ind, int prev_ind, vector<int>& nums, int n, vector<vector<int>> &dp) 
@@ -137,8 +137,8 @@ public:
         // return Rec(0, -1, nums, n);
 
         // Mempization:
-        // vector<vector<int>> dp(n, vector<int>(n+1, -1));
-        // return Mem(0, -1, nums, n, dp);
+        vector<vector<int>> dp(n, vector<int>(n+1, -1));
+        return Mem(0, -1, nums, n, dp);
 
         // Tabulation:
         // return Tab(nums);
@@ -147,6 +147,6 @@ public:
         // return spaceOptimization(nums);
 
         // Optimized: For printing purpose
-        return optimizedTab(nums);
+        // return optimizedTab(nums);
     }
 };
