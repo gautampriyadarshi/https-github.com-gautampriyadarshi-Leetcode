@@ -1838,4 +1838,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1584-min-cost-to-connect-all-points](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/1584-min-cost-to-connect-all-points) |
+## Brute-Force Search
+|  |
+| ------- |
+| [0139-word-break](https://github.com/gautampriyadarshi/https-github.com-gautampriyadarshi-Leetcode/tree/master/0139-word-break) |
 <!---LeetCode Topics End-->
