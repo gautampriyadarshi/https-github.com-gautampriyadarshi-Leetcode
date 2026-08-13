@@ -1,26 +1,60 @@
 class Solution {
+    bool Rec(int ind, string &s, unordered_set<string> &wordSet) 
+    {
+        if (ind == s.length())
+            return true;
+
+        string currentWord = "";
+        for (int i = ind; i < s.length(); i++) 
+        {
+            currentWord += s[i];
+            
+            // If the current prefix is a valid dictionary word...
+            if (wordSet.find(currentWord) != wordSet.end()) 
+            {
+                // ...make a cut and recursively check the remainder of the string.
+                // If the remainder can be segmented, the whole path is valid!
+                if (Rec(i + 1, s, wordSet) == true)
+                    return true; 
+            }
+        }
+        return false;
+    }
+
+    bool Mem(int ind, string &s, unordered_set<string> &wordSet, vector<int> &dp) 
+    {
+        if (ind == s.length())
+            return true;
+        
+        if(dp[ind] != -1)
+            return dp[ind];
+
+        string currentWord = "";
+        for (int i = ind; i < s.length(); i++) 
+        {
+            currentWord += s[i];
+            
+            if (wordSet.find(currentWord) != wordSet.end()) 
+            {
+                if (Mem(i + 1, s, wordSet, dp) == true)
+                    return dp[ind] = 1;     // Not dp[i] = 1
+            }
+        }
+        return dp[ind] = 0;
+    }
 public:
     bool wordBreak(string s, vector<string>& wordDict) 
     {
-        int n = s.length();
-        unordered_set<string> dict(wordDict.begin(), wordDict.end());
-        vector<bool> dp(n + 1, false);
-        dp[0] = true;  // Empty string is always "segmented"
-        int maxLen = 0;
+        int n = s.size();
 
-        for (const string& word : wordDict) {
-            maxLen = max(maxLen, (int)word.size());
-        }
+        // Convert vector to unordered_set for O(1) average time lookups
+        unordered_set<string> wordSet(wordDict.begin(), wordDict.end());
+        
+        // Recursion:
+        // return Rec(0, s, wordSet);
 
-        for (int i = 1; i <= n; ++i) {
-            for (int j = max(0, i - maxLen); j < i; ++j) {
-                if (dp[j] && dict.find(s.substr(j, i - j)) != dict.end()) {
-                    dp[i] = true;
-                    break;  // Early termination when we find a valid word
-                }
-            }
-        }
-
-        return dp[n]; 
+        // Memoization:
+        vector<int> dp(n, -1);
+        return Mem(0, s, wordSet, dp);
     }
 };
