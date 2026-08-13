@@ -42,6 +42,31 @@ class Solution {
         }
         return dp[ind] = 0;
     }
+
+    bool Tab(string &s, unordered_set<string> &wordSet) 
+    {
+        int n = s.length();
+        vector<int> dp(n + 1, 0);
+        dp[n] = 1;  // Reaching the end of the string means success
+        
+        // Loop backwards from n-1 down to 0
+        for (int ind = n - 1; ind >= 0; ind--) 
+        {
+            string currentWord = "";
+            for (int i = ind; i < n; i++) 
+            {
+                currentWord += s[i];
+                if (wordSet.find(currentWord) != wordSet.end()) 
+                {
+                    if (dp[i + 1] == 1) {
+                        dp[ind] = 1;
+                        break; // We found a valid cut, no need to check further for this 'ind'
+                    }
+                }
+            }
+        }
+        return dp[0];
+    }
 public:
     bool wordBreak(string s, vector<string>& wordDict) 
     {
@@ -54,7 +79,10 @@ public:
         // return Rec(0, s, wordSet);
 
         // Memoization:
-        vector<int> dp(n, -1);
-        return Mem(0, s, wordSet, dp);
+        // vector<int> dp(n, -1);
+        // return Mem(0, s, wordSet, dp);
+
+        // Tabulation:
+        return Tab(s, wordSet);
     }
 };
