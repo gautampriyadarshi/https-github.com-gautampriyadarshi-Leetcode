@@ -31,7 +31,8 @@ class Solution {
         return true;
     }
 
-    void nQueens(vector<string>& board, int row, int n, vector<vector<string>>& ans) 
+    void nQueens(vector<string>& board, int row, int n, 
+                 vector<vector<string>>& ans) 
     {
         if (row == n) 
         {
