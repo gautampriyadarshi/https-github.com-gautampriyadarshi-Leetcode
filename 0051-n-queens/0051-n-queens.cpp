@@ -47,7 +47,7 @@ public:
         
         // Lookup arrays to replace the O(N) isSafe function
         vector<bool> cols(n, false);
-        
+
         // Diagonal arrays require size 2n - 1 to cover all possible diagonals
         vector<bool> leftDiag(2 * n - 1, false);
         vector<bool> rightDiag(2 * n - 1, false);
@@ -56,3 +56,18 @@ public:
         return ans;
     }
 };
+
+/**************  
+Time Complexity: O(N!)
+In the first row, we have N choices. In the second row, we have a maximum of N-1 choices, and so on. The maximum number of nodes in the recursion tree is bounded by N!.
+
+Because our isSafe check is now O(1), the time spent at each node is significantly reduced compared to your original O(N * N!) solution. (Note: copying the valid board to the ans array takes O(N^2) time, but the search space generation dominates the overall time).
+
+Space Complexity: O(N)
+The board takes O(N^2) space.
+The three tracking vectors (cols, leftDiag, rightDiag) take O(N) space.
+The recursion stack takes up to O(N) space (maximum depth of N).
+(Note: This excludes the space required for the output array ans, which takes O(K * N^2) space where K is the number of valid solutions).
+
+
+**************/
