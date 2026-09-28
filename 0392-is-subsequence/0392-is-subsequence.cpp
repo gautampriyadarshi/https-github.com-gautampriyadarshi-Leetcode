@@ -1,20 +1,24 @@
-#include<bits/stdc++.h>
 class Solution {
-    
 public:
     bool isSubsequence(string s, string t) 
     {
-        if(s == t)
+        int m = s.size(), n = t.size(), i = 0, j = 0;
+
+        if(m == 0)
             return true;
 
-        int j = 0;
-        for(int i = 0; i < t.length(); i++)
+        while(i < m && j < n)
         {
-            if(s[j] == t[i])
-                j++;
+            if(s[i] == t[j])
+            {
+                if(i == m-1)
+                    return true;
 
-            if(j == s.length())
-               return true;
+                i++;
+                j++;
+            }
+            else
+                j++;
         }
         return false;
     }
