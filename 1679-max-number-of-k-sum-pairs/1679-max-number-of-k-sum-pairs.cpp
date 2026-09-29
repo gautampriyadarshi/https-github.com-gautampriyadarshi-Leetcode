@@ -3,17 +3,21 @@ public:
     int maxOperations(vector<int>& nums, int k) 
     {
         int count = 0;
-        map<int, int> mp;
-        for(int i = 0; i < nums.size(); i++)
+        sort(nums.begin(), nums.end());
+        int i = 0, j = nums.size()-1;
+        while(i < j)
         {
-            int diff = k - nums[i];
-            if(mp[diff] > 0)
+            int sum = nums[i] + nums[j];
+            if(sum == k)
             {
                 count++;
-                mp[diff]--;
+                i++;
+                j--;
             }
+            else if(sum > k)
+                j--;
             else
-                mp[nums[i]]++;
+                i++;
         }
         return count;
     }
