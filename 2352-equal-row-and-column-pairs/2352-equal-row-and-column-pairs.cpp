@@ -9,12 +9,7 @@ public:
         // Adding vector of rows in set
         for(int i = 0; i < grid.size(); i++)
         {
-            for(int j = 0; j < grid[0].size(); j++)
-            {
-                help.push_back(grid[i][j]);
-            }
-            mp[help]++;
-            help.clear();
+            mp[grid[i]]++;
         }
 
         // Checking each column
