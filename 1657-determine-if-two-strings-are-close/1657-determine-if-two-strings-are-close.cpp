@@ -1,3 +1,40 @@
+// My code is also present below this class
+class Solution {
+public:
+    bool closeStrings(string word1, string word2) 
+    {
+        if (word1.size() != word2.size())
+            return false;
+
+        // Fixed-size frequency arrays for 26 lowercase English letters
+        vector<int> count1(26, 0), count2(26, 0);
+
+        for (char c : word1) 
+            count1[c - 'a']++;
+
+        for (char c : word2) 
+            count2[c - 'a']++;
+
+        // 1. Verify character presence: both must have the same set of characters
+        for (int i = 0; i < 26; i++) {
+            if ((count1[i] == 0 && count2[i] > 0) || (count1[i] > 0 && count2[i] == 0)) 
+                return false;
+        }
+
+        // 2. Verify frequency multiset: sorted frequency counts must match
+        sort(count1.begin(), count1.end());
+        sort(count2.begin(), count2.end());
+
+        return count1 == count2;
+    }
+};
+// TC: O(n)
+// SC: O(n)
+
+
+/************ My code:  ************/
+
+/******* 
 class Solution {
 public:
     bool closeStrings(string word1, string word2) 
@@ -45,3 +82,5 @@ public:
 
 // TC: O(n)
 // SC: O(1)
+
+******/
