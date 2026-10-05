@@ -1,30 +1,41 @@
 class Solution {
 public:
-    int compress(vector<char>& s) 
+    int compress(vector<char>& chars) 
     {
-        string x = "";
-        for(int i = 0; i < s.size(); i++)
+        int n = chars.size(), count = 1, i = 1;
+        string st = "", num = "";
+        
+        while(i < n)
         {
-            int count = 1, k = i;
-            while(i+1 < s.size())
-            {
-                if(s[i] != s[i+1]) 
-                    break;
-
+            if(chars[i] == chars[i-1])
                 count++;
-                i++;
+            else
+            {
+                num = to_string(count);
+                
+                if(count > 1)
+                    st += chars[i-1] + num;
+                else
+                    st += chars[i-1];
+                
+                count = 1;
             }
-            x += s[k];
-
-            if(count != 1) 
-                x += to_string(count);
+            i++;
         }
-        s.clear();
 
-        for(int i = 0; i < x.size(); i++)
-        {
-            s.push_back(x[i]);
+        num = to_string(count);
+        if(count > 1)
+            st += chars[i-1] + num;
+        else
+            st += chars[i-1];
+
+        n = st.size();
+        chars.clear();
+
+        for(int i = 0; i < n; i++) {
+            chars.push_back(st[i]);
         }
-        return s.size();
+
+        return n;
     }
 };
