@@ -14,8 +14,7 @@ public:
         string ans = "";
         while(!st.empty())
         {
-            char x = st.top();
-            ans += x;
+            ans += st.top();
             st.pop();
         }
 
